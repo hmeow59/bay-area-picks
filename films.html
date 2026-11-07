@@ -1,0 +1,1253 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>湾区电影片单</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap">
+<style>
+/* A rolling programme sheet: kinds as chapters, the recommended open, the rest folded. */
+:root {
+  --bg: #f7f8f5; --surface: #ffffff; --fg: #1c2220; --muted: #66706b; --line: #dde2dd;
+  --accent: #2f6f5e; --accent-soft: #e4efe9;
+  --display: "Noto Serif SC", "Songti SC", "STSong", serif;
+  --body: system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121614; --surface: #1a1f1d; --fg: #e6ebe8; --muted: #9aa5a0; --line: #2b3330;
+  --accent: #7cc4ad; --accent-soft: #1f2e29; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121614; --surface: #1a1f1d; --fg: #e6ebe8; --muted: #9aa5a0; --line: #2b3330;
+  --accent: #7cc4ad; --accent-soft: #1f2e29; color-scheme: dark }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 var(--body); }
+[hidden] { display: none !important; }
+.page { max-width: 760px; margin: 0 auto; padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header h1 { font: 600 28px/1.25 var(--display); margin: 0 0 6px; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); font-size: 13px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 8px; }
+nav a { padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--fg); text-decoration: none; font-size: 13px; background: var(--surface); }
+nav a:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.kind { margin-top: 34px; }
+h2 { font: 600 22px/1.3 var(--display); margin: 0 0 4px; padding-bottom: 6px; border-bottom: 2px solid var(--fg); }
+nav a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.group > summary { font-size: 14px; font-weight: 600; letter-spacing: .08em; color: var(--accent); padding: 8px 0; }
+.group > .list { margin-bottom: 4px; }
+.count { color: var(--muted); font: 400 13px var(--body); font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.list { display: grid; gap: 10px; }
+.item { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; min-width: 0; }
+.item.worth { border-left: 3px solid var(--accent); }
+.compact .item { padding: 8px 12px; }
+.item h4 { margin: 0 0 2px; font-size: 16px; line-height: 1.4; }
+.alt { color: var(--muted); font-weight: 400; font-size: 14px; }
+.item p { margin: 2px 0; }
+.facts, .when { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.reason { color: var(--accent); }
+.about { font-size: 14px; }
+.compact .about { display: none; }
+.times { list-style: none; margin: 6px 0 0; padding: 0; font-size: 13px; font-variant-numeric: tabular-nums; }
+.times li { padding: 3px 0; border-top: 1px dashed var(--line); }
+.where { font-weight: 600; margin-right: 6px; }
+.day { display: inline-block; margin-right: 10px; color: var(--muted); }
+.day b { color: var(--fg); font-weight: 500; }
+.go { display: inline-block; margin-top: 4px; font-size: 13px; color: var(--accent); word-break: break-all; }
+details { margin-top: 14px; }
+.showings { margin-top: 6px; }
+.showings > summary { letter-spacing: 0; padding: 2px 0; font-variant-numeric: tabular-nums; }
+summary { cursor: pointer; font-size: 13px; letter-spacing: .08em; color: var(--muted); padding: 6px 0; }
+.compact { margin-top: 8px; }
+.none { color: var(--muted); font-size: 14px; }
+footer { margin-top: 40px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<h1>湾区电影片单</h1>
+<p>11月6日 周五 至 12月5日 周六 · 旧金山湾区 · 每天早上更新，更新于 11月6日 周五 18:47</p>
+</header>
+
+<section id="film" class="kind">
+<h2>电影 <span class="count">47 / 167</span></h2>
+<details class="group" open><summary>值得看 <span class="count">47</span></summary>
+<div class="list"><article class="item worth">
+<h4>You Can See Everything <span class="alt">你能看到一切</span></h4>
+<p class="facts">2026 · Nathan Fielder、Lance Oppenheim · 174 分钟 · 纪录</p>
+<p class="reason">芬德与奥本海姆跟拍霍姆斯三年，把硅谷骗局变成一场无法收场的表演，张力十足又拒绝给答案。</p>
+<p class="about">入狱前34天，硅谷创始人伊丽莎白·霍姆斯让怀疑的摄制组记录她，演变成持续3年的迷幻之旅。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 18:50 · Cinemark Century Great Mall 20，共 138 场</summary><ul class="times"><li><span class="where">Cinemark Century Great Mall 20</span> <span class="day">11月6日 周五 <b>18:50 22:40</b></span><span class="day">11月7日 周六 <b>10:45 14:45 18:35 22:40</b></span><span class="day">11月8日 周日 <b>10:45 14:45 18:35 22:35</b></span><span class="day">11月9日 周一 <b>11:10 15:00 18:50 21:45</b></span><span class="day">11月10日 周二 <b>11:10 15:00 18:50 21:45</b></span><span class="day">11月11日 周三 <b>11:10 15:00 18:50 21:45</b></span></li><li><span class="where">Rialto Cinemas Elmwood</span> <span class="day">11月6日 周五 <b>20:35</b></span><span class="day">11月7日 周六 <b>13:30 17:00 20:35</b></span><span class="day">11月8日 周日 <b>13:30 17:00 20:35</b></span><span class="day">11月9日 周一 <b>13:30 17:00 20:35</b></span><span class="day">11月10日 周二 <b>13:30 17:00 20:35</b></span><span class="day">11月11日 周三 <b>13:30 17:00 20:35</b></span><span class="day">11月12日 周四 <b>13:30 17:00 20:35</b></span></li><li><span class="where">AMC Saratoga 14</span> <span class="day">11月6日 周五 <b>20:45</b></span><span class="day">11月7日 周六 <b>11:45 15:00 20:00 21:30</b></span><span class="day">11月8日 周日 <b>12:30 16:30 20:30</b></span><span class="day">11月9日 周一 <b>13:45 16:30 20:30</b></span><span class="day">11月10日 周二 <b>13:45 16:30 20:30</b></span><span class="day">11月11日 周三 <b>16:30 20:30</b></span></li><li><span class="where">Alamo Drafthouse Valley Fair</span> <span class="day">11月6日 周五 <b>21:15</b></span><span class="day">11月7日 周六 <b>11:15 14:15 18:15 21:15</b></span><span class="day">11月8日 周日 <b>11:30 14:15 18:15</b></span><span class="day">11月9日 周一 <b>11:45 13:30 15:45 18:15</b></span><span class="day">11月10日 周二 <b>12:45 15:45 18:15</b></span><span class="day">11月11日 周三 <b>11:45 15:45 18:15</b></span></li><li><span class="where">Cinemark CinéArts Santana Row</span> <span class="day">11月6日 周五 <b>22:20</b></span><span class="day">11月7日 周六 <b>09:35 13:45 16:10 20:25</b></span><span class="day">11月8日 周日 <b>09:30 13:45 16:00 20:25</b></span><span class="day">11月9日 周一 <b>11:45 15:30 19:55</b></span><span class="day">11月10日 周二 <b>11:50 15:40 20:00</b></span><span class="day">11月11日 周三 <b>11:50 14:45 18:35 22:25</b></span></li><li><span class="where">AMC Mercado 20</span> <span class="day">11月6日 周五 <b>22:40</b></span><span class="day">11月7日 周六 <b>10:00 12:00 14:30 18:30 22:30</b></span><span class="day">11月8日 周日 <b>10:00 12:00 14:00 16:30 20:30</b></span><span class="day">11月9日 周一 <b>12:00 15:00 18:00 22:00</b></span><span class="day">11月10日 周二 <b>12:00 14:15 18:15 22:10</b></span><span class="day">11月11日 周三 <b>12:00 15:00 18:00 22:00</b></span></li><li><span class="where">AMC Dine-In Sunnyvale 12</span> <span class="day">11月6日 周五 <b>23:00</b></span><span class="day">11月7日 周六 <b>11:15 15:30 18:30 23:00</b></span><span class="day">11月8日 周日 <b>11:15 15:30 18:30 23:00</b></span><span class="day">11月9日 周一 <b>13:30 16:15 20:15 22:30</b></span><span class="day">11月10日 周二 <b>12:30 16:15 20:15 22:30</b></span><span class="day">11月11日 周三 <b>12:30 16:15 20:15 22:30</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-00e6ae6532a6a47808b49ea588941e15c3ad9e6a37d791125483f60ad6f7785b" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Harakiri <span class="alt">切腹</span></h4>
+<p class="facts">1962 · 小林正树 · 135 分钟 · 动作 / 剧情 / 历史</p>
+<p class="reason">小林正树以层层嵌套的倒叙剖开武士道的伪善，仲代达矢的隐忍与爆发惊人，杀阵少而致命。</p>
+<p class="about">家族没落的失业武士来到藩主宅邸请求切腹，家臣却认定他只是讨差事，逼他当场切腹。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 19:00 · BAMPFA，共 2 场</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月6日 周五 <b>19:00</b></span><span class="day">11月20日 周五 <b>16:00</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/harakiri" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Wild Horse Nine <span class="alt">野马九号</span></h4>
+<p class="facts">2026 · 马丁·麦克唐纳 · 117 分钟 · 喜剧 / 犯罪 / 惊悚</p>
+<p class="reason">麦克唐纳把两个CIA特工丢进1973年智利，荒诞对白撞上政治惨剧，马尔科维奇贡献威尼斯影帝级表演。</p>
+<p class="about">1973年智利，两名性格迥异的CIA特工被局长从圣地亚哥派往复活节岛，执行一项考验彼此信任与忠诚的任务。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 19:00 · AMC Mercado 20，共 141 场</summary><ul class="times"><li><span class="where">AMC Mercado 20</span> <span class="day">11月6日 周五 <b>19:00 22:20</b></span><span class="day">11月7日 周六 <b>10:30 14:00 17:00 20:00 22:45</b></span><span class="day">11月8日 周日 <b>11:00 13:30 16:30 19:30 22:30</b></span><span class="day">11月9日 周一 <b>12:15 16:30 19:30 22:30</b></span><span class="day">11月10日 周二 <b>13:30 16:30 19:30 22:30</b></span><span class="day">11月11日 周三 <b>11:30 15:00 19:30 21:45</b></span></li><li><span class="where">AMC Saratoga 14</span> <span class="day">11月6日 周五 <b>19:00 22:00</b></span><span class="day">11月7日 周六 <b>10:30 13:30 15:00 16:30 19:30 22:30</b></span><span class="day">11月8日 周日 <b>12:30 15:30 17:00 18:30 21:30</b></span><span class="day">11月9日 周一 <b>15:15 17:30 18:15 21:15</b></span><span class="day">11月10日 周二 <b>15:40 17:30 18:30 21:30</b></span><span class="day">11月11日 周三 <b>16:30 18:15 21:15</b></span></li><li><span class="where">Alamo Drafthouse Valley Fair</span> <span class="day">11月6日 周五 <b>19:00 22:15</b></span><span class="day">11月7日 周六 <b>12:30 15:45 19:00 22:15</b></span><span class="day">11月8日 周日 <b>12:30 15:45 19:00</b></span><span class="day">11月9日 周一 <b>11:55 15:15 18:30</b></span><span class="day">11月10日 周二 <b>11:55 12:40 15:15 18:30</b></span><span class="day">11月11日 周三 <b>12:15 13:30 16:30 18:00</b></span></li><li><span class="where">Cinemark CinéArts Santana Row</span> <span class="day">11月6日 周五 <b>19:35 23:30</b></span><span class="day">11月7日 周六 <b>09:30 13:20 17:30 20:00 22:50</b></span><span class="day">11月8日 周日 <b>09:30 13:15 17:30 19:50 22:40</b></span><span class="day">11月9日 周一 <b>11:35 14:40 17:30 19:40 22:30</b></span><span class="day">11月10日 周二 <b>11:40 14:30 17:20 19:00 21:55</b></span><span class="day">11月11日 周三 <b>11:35 14:40 17:30 19:40 22:30</b></span></li><li><span class="where">Rialto Cinemas Elmwood</span> <span class="day">11月6日 周五 <b>20:30</b></span><span class="day">11月7日 周六 <b>13:00 15:30 18:00 20:30</b></span><span class="day">11月8日 周日 <b>13:00 15:30 18:00 20:30</b></span><span class="day">11月9日 周一 <b>13:00 15:30 18:00 20:30</b></span><span class="day">11月10日 周二 <b>13:00 15:30 18:00 20:30</b></span><span class="day">11月11日 周三 <b>13:00 15:30 18:00 20:30</b></span><span class="day">11月12日 周四 <b>13:00 15:30 18:00 20:30</b></span></li><li><span class="where">AMC Dine-In Sunnyvale 12</span> <span class="day">11月6日 周五 <b>21:00</b></span><span class="day">11月7日 周六 <b>12:00 15:00 18:00 21:00</b></span><span class="day">11月8日 周日 <b>12:00 15:00 18:00 21:00</b></span><span class="day">11月9日 周一 <b>12:00 16:30 19:30 22:00</b></span><span class="day">11月10日 周二 <b>12:00 16:30 19:30 22:00</b></span><span class="day">11月11日 周三 <b>12:00 16:30 19:30 22:00</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-39b0279268ea2b934ac7bcc8d9bdbf42bad6169dad3234397ade9269c1e5a1f2" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Resident Evil <span class="alt">生化危机：爆发夜</span></h4>
+<p class="facts">2026 · 扎克·克雷格 · 94 分钟 · 恐怖 / 科幻 / 冒险</p>
+<p class="reason">扎克·克雷格把生化危机拍成身体恐怖与黑色幽默并重的惊悚片，节奏和惊吓设计出色。</p>
+<p class="about">医疗速递员布莱恩奔赴浣熊市，深陷全城失控的病毒浩劫，异变怪物横行肆虐。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 19:00 · Alamo Drafthouse Valley Fair，共 19 场</summary><ul class="times"><li><span class="where">Alamo Drafthouse Valley Fair</span> <span class="day">11月6日 周五 <b>19:00</b></span><span class="day">11月7日 周六 <b>19:00 22:35</b></span><span class="day">11月8日 周日 <b>19:00</b></span><span class="day">11月9日 周一 <b>19:40</b></span></li><li><span class="where">Cinemark Century Great Mall 20</span> <span class="day">11月6日 周五 <b>21:30 23:30</b></span><span class="day">11月7日 周六 <b>09:25 20:00 21:50 23:30</b></span><span class="day">11月8日 周日 <b>20:05 21:45</b></span><span class="day">11月9日 周一 <b>21:35</b></span><span class="day">11月10日 周二 <b>22:35</b></span><span class="day">11月11日 周三 <b>22:35</b></span></li><li><span class="where">AMC Dine-In Sunnyvale 12</span> <span class="day">11月7日 周六 <b>19:15</b></span><span class="day">11月8日 周日 <b>19:00</b></span><span class="day">11月9日 周一 <b>12:15</b></span></li></ul></details>
+<a class="go" href="https://drafthouse.com/sf/show/resident-evil-2026" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Godzilla Minus Zero <span class="alt">ゴジラ-0.0 · 哥斯拉-0.0</span></h4>
+<p class="facts">2026 · 山崎贵 · 135 分钟 · 科幻 / 恐怖 / 动作</p>
+<p class="reason">山崎贵延续《-1.0》的沉重基调，把巨兽灾难拍成对人类罪责的追问，影院声压十足。</p>
+<p class="about">战争将日本粉碎至“零”，哥斯拉袭击更使其陷入“负”的绝境；两年后，人们艰难复苏时巨兽再次袭来。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 19:00 · AMC Mercado 20，共 305 场</summary><ul class="times"><li><span class="where">AMC Mercado 20</span> <span class="day">11月6日 周五 <b>19:00 20:00 21:15 22:15</b></span><span class="day">11月7日 周六 <b>09:45 11:30 12:30 14:45 15:45 18:00 19:00 20:00 21:30 22:15 23:20</b></span><span class="day">11月8日 周日 <b>10:00 11:30 12:30 14:45 15:45 18:00 19:00 20:00 21:15 22:15</b></span><span class="day">11月9日 周一 <b>12:30 13:15 15:15 16:00 18:30 19:15 20:00 21:45 22:30</b></span><span class="day">11月10日 周二 <b>12:00 12:30 15:15 16:00 18:30 19:15 20:00 21:45 22:30</b></span><span class="day">11月11日 周三 <b>11:30 12:15 14:45 15:30 16:00 18:00 18:45 19:00 21:15 22:00 22:30</b></span></li><li><span class="where">AMC Saratoga 14</span> <span class="day">11月6日 周五 <b>19:00 20:15 21:15 22:15</b></span><span class="day">11月7日 周六 <b>09:30 12:30 13:45 15:45 17:00 18:00 19:00 20:15 21:15 22:15</b></span><span class="day">11月8日 周日 <b>11:30 14:45 15:45 18:00 19:00 20:00 21:15</b></span><span class="day">11月9日 周一 <b>14:45 18:00 19:15 20:30 21:15</b></span><span class="day">11月10日 周二 <b>14:45 16:00 18:00 19:15 20:30 21:15</b></span><span class="day">11月11日 周三 <b>14:45 16:45 18:00 20:00 21:15</b></span><span class="day">11月14日 周六 <b>22:15</b></span></li><li><span class="where">Balboa Theater</span> <span class="day">11月6日 周五 <b>19:00</b></span><span class="day">11月7日 周六 <b>13:30</b></span><span class="day">11月8日 周日 <b>13:00</b></span><span class="day">11月9日 周一 <b>19:00</b></span><span class="day">11月10日 周二 <b>19:00</b></span><span class="day">11月11日 周三 <b>19:00</b></span><span class="day">11月12日 周四 <b>19:00</b></span></li><li><span class="where">Alamo Drafthouse Valley Fair</span> <span class="day">11月6日 周五 <b>19:15 20:45 22:00</b></span><span class="day">11月7日 周六 <b>11:30 12:45 13:45 15:00 16:15 17:15 18:30 19:45 20:45 22:00</b></span><span class="day">11月8日 周日 <b>10:45 11:30 12:45 14:00 15:00 16:15 17:30 18:30 19:45</b></span><span class="day">11月9日 周一 <b>12:00 12:45 14:45 15:30 16:15 17:30 19:00</b></span><span class="day">11月10日 周二 <b>12:00 12:30 14:45 15:30 16:00 19:00 19:30</b></span><span class="day">11月11日 周三 <b>12:00 14:30 15:30 16:00 19:00</b></span></li><li><span class="where">AMC Dine-In Sunnyvale 12</span> <span class="day">11月6日 周五 <b>19:45 20:45 22:00 23:00</b></span><span class="day">11月7日 周六 <b>10:00 11:00 13:15 14:15 16:30 17:30 18:45 19:45 20:45 22:00 23:00</b></span><span class="day">11月8日 周日 <b>10:00 11:00 13:15 14:15 16:30 17:30 18:45 19:45 20:45 22:00 23:00</b></span><span class="day">11月9日 周一 <b>12:00 15:15 16:00 17:30 18:30 19:15 21:45 22:30</b></span><span class="day">11月10日 周二 <b>12:00 15:15 16:00 17:30 18:30 19:15 21:45 22:30</b></span><span class="day">11月11日 周三 <b>12:00 15:00 15:45 17:30 18:15 20:45 21:30 22:30</b></span></li><li><span class="where">Cinemark Century Great Mall 20</span> <span class="day">11月6日 周五 <b>19:55 20:30 21:55 23:05 23:35</b></span><span class="day">11月7日 周六 <b>09:30 10:00 10:55 12:40 13:10 14:10 15:50 16:20 17:20 19:00 19:30 20:30 22:10 22:40 23:35</b></span><span class="day">11月8日 周日 <b>09:30 10:00 10:55 12:40 13:10 14:10 15:50 16:20 17:20 19:00 19:30 20:30 22:10 22:35</b></span><span class="day">11月9日 周一 <b>10:25 10:55 12:25 13:30 14:05 15:35 16:35 17:15 18:45 19:45 20:25 21:55 22:35</b></span><span class="day">11月10日 周二 <b>10:25 10:50 12:25 13:25 14:00 15:35 16:30 17:10 18:45 19:40 20:20 22:35 22:45</b></span><span class="day">11月11日 周三 <b>10:25 10:55 12:20 13:25 14:05 15:30 16:35 17:15 18:40 19:45 20:25 22:35</b></span><span class="day">11月13日 周五 <b>12:15 15:30 18:45 22:00</b></span><span class="day">11月14日 周六 <b>09:30 12:45 16:00 19:15 22:30</b></span><span class="day">11月15日 周日 <b>09:50 13:05 16:20 19:35</b></span><span class="day">11月16日 周一 <b>15:55 19:10</b></span><span class="day">11月17日 周二 <b>15:30 18:45</b></span><span class="day">11月18日 周三 <b>15:50 19:05</b></span></li><li><span class="where">Cinemark CinéArts Santana Row</span> <span class="day">11月6日 周五 <b>20:00 23:10</b></span><span class="day">11月7日 周六 <b>09:30 12:40 15:50 19:00 22:10</b></span><span class="day">11月8日 周日 <b>09:30 12:40 15:50 19:00 22:10</b></span><span class="day">11月9日 周一 <b>12:10 15:20 18:30 21:40</b></span><span class="day">11月10日 周二 <b>11:45 16:10 19:20 22:30</b></span><span class="day">11月11日 周三 <b>11:30 16:10 19:20 22:30</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-632524b4dbcb70ec409f514ff3714b4452e648cdacfa334487f8c2394ff7b6d8" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Wildwood <span class="alt">荒野丛林</span></h4>
+<p class="facts">2026 · 特拉维斯·奈特 · 132 分钟 · 动画 / 冒险 / 奇幻</p>
+<p class="reason">莱卡手工定格动画再启程，太平洋西北森林的雾气、苔藓与魔法生灵都值得在影院细看。</p>
+<p class="about">普鲁和同学柯蒂斯误入禁忌魔法森林，那里遍布魔法生灵与劲敌。二人踏上营救之旅，要从神秘女子亚历山德拉的鸦群手中救出婴儿弟弟。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 19:15 · AMC Dine-In Sunnyvale 12，共 130 场</summary><ul class="times"><li><span class="where">AMC Dine-In Sunnyvale 12</span> <span class="day">11月6日 周五 <b>19:15 22:15</b></span><span class="day">11月7日 周六 <b>10:15 15:15 19:45 21:45</b></span><span class="day">11月8日 周日 <b>10:15 15:15 19:15 21:45</b></span><span class="day">11月9日 周一 <b>12:30 15:45 18:15 21:30</b></span><span class="day">11月10日 周二 <b>12:30 15:45 18:15 21:30</b></span><span class="day">11月11日 周三 <b>12:30 15:45 18:15 21:30</b></span></li><li><span class="where">AMC Mercado 20</span> <span class="day">11月6日 周五 <b>19:15 22:30</b></span><span class="day">11月7日 周六 <b>09:45 12:55 15:15 18:20 22:15</b></span><span class="day">11月8日 周日 <b>11:00 13:15 16:30 18:00 21:15</b></span><span class="day">11月9日 周一 <b>13:30 15:50 18:15 22:15</b></span><span class="day">11月10日 周二 <b>12:30 15:45 19:00 22:15</b></span><span class="day">11月11日 周三 <b>13:00 16:15 19:25 22:30</b></span></li><li><span class="where">AMC Saratoga 14</span> <span class="day">11月6日 周五 <b>19:30 21:30</b></span><span class="day">11月7日 周六 <b>11:15 14:30 19:00 22:15</b></span><span class="day">11月8日 周日 <b>12:45 16:30 19:45 21:15</b></span><span class="day">11月9日 周一 <b>14:45 18:00 21:15</b></span><span class="day">11月10日 周二 <b>14:45 18:00 21:15</b></span><span class="day">11月11日 周三 <b>15:15 18:15 21:15</b></span></li><li><span class="where">Cinemark CinéArts Santana Row</span> <span class="day">11月6日 周五 <b>20:10 23:15</b></span><span class="day">11月7日 周六 <b>09:50 13:00 16:10 19:20 22:30</b></span><span class="day">11月8日 周日 <b>09:40 12:45 15:55 19:05 22:15</b></span><span class="day">11月9日 周一 <b>11:40 14:20 17:25 20:30</b></span><span class="day">11月10日 周二 <b>11:25 14:25 17:25 20:30</b></span><span class="day">11月11日 周三 <b>11:40 14:25 17:25 20:30</b></span></li><li><span class="where">Cinemark Century Great Mall 20</span> <span class="day">11月6日 周五 <b>20:15 23:20</b></span><span class="day">11月7日 周六 <b>09:40 12:45 15:50 18:55 22:00</b></span><span class="day">11月8日 周日 <b>09:40 12:45 15:50 18:55 22:00</b></span><span class="day">11月9日 周一 <b>12:05 15:15 18:20 21:25</b></span><span class="day">11月10日 周二 <b>12:05 15:15 18:20 21:25</b></span><span class="day">11月11日 周三 <b>12:05 15:15 18:20 21:25</b></span></li><li><span class="where">Alamo Drafthouse Valley Fair</span> <span class="day">11月6日 周五 <b>22:20</b></span><span class="day">11月7日 周六 <b>11:35 14:55 18:45 21:45</b></span><span class="day">11月8日 周日 <b>12:05 15:25 18:05</b></span><span class="day">11月9日 周一 <b>12:05 15:25 18:45</b></span><span class="day">11月10日 周二 <b>12:05 15:25 18:45</b></span><span class="day">11月11日 周三 <b>11:55 15:15 18:45</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-f5fdbb53767b27b3d674145efb20ac06cb8d02fb19d9c1389c2c60f2586044dc" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Mary Poppins <span class="alt">欢乐满人间</span></h4>
+<p class="facts">1964 · Robert Stevenson · 139 分钟 · 喜剧 / 家庭 / 奇幻</p>
+<p class="reason">朱莉·安德鲁斯与动画共舞的段落仍是歌舞片巅峰，把童心与父女和解唱成一部经典。</p>
+<p class="about">一位魔法保姆来到一位冷漠银行家并不快乐的家庭中工作。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 19:30 · Stanford Theatre，共 5 场</summary><ul class="times"><li><span class="where">Stanford Theatre</span> <span class="day">11月6日 周五 <b>19:30</b></span><span class="day">11月7日 周六 <b>15:05 19:30</b></span><span class="day">11月8日 周日 <b>15:05 19:30</b></span></li></ul></details>
+<a class="go" href="https://stanfordtheatre.org/calendars/Happy%20Holidays%202026.html" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Warriors of the Wind <span class="alt">風の谷のナウシカ · 风之谷</span></h4>
+<p class="facts">1984 · 宫崎骏 · 95 分钟 · 冒险 / 动画 / 奇幻</p>
+<p class="reason">宫崎骏早期代表作，腐海与王虫的世界观在银幕上更显辽阔，娜乌西卡的理想主义仍有力量。</p>
+<p class="about">千年后腐海与巨虫威胁人类，风之谷凭海风安宁。公主娜乌西卡能感知王虫；载有古代兵器的运输机坠毁，令风之谷卷入战争。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 20:40 · Roxie Theater，共 3 场</summary><ul class="times"><li><span class="where">Roxie Theater</span> <span class="day">11月6日 周五 <b>20:40</b></span><span class="day">11月8日 周日 <b>16:45</b></span><span class="day">11月12日 周四 <b>18:00</b></span></li></ul></details>
+<a class="go" href="https://roxie.com/film/new-people-nausicaa-of-the-valley-of-the-wind/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Fjord <span class="alt">峡湾</span></h4>
+<p class="facts">2026 · 克里斯蒂安·蒙吉 · 146 分钟 · 剧情</p>
+<p class="reason">蒙吉借虐童调查剖开文化偏见与家庭亲密，雪夜灯影和邻居温情让冷峻议题有温度。</p>
+<p class="about">一对虔诚的罗马尼亚裔挪威夫妇带五个孩子搬到挪威小镇，与邻居熟络；女儿带不明伤痕到学校后，夫妇因涉嫌虐待孩子受调查。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 21:45 · AMC Saratoga 14，共 16 场</summary><ul class="times"><li><span class="where">AMC Saratoga 14</span> <span class="day">11月6日 周五 <b>21:45</b></span><span class="day">11月7日 周六 <b>21:30</b></span><span class="day">11月8日 周日 <b>19:15</b></span><span class="day">11月9日 周一 <b>20:45</b></span><span class="day">11月10日 周二 <b>20:45</b></span><span class="day">11月11日 周三 <b>16:15</b></span></li><li><span class="where">Rialto Cinemas Elmwood</span> <span class="day">11月7日 周六 <b>10:05</b></span><span class="day">11月8日 周日 <b>10:05</b></span></li><li><span class="where">AMC Mercado 20</span> <span class="day">11月7日 周六 <b>19:35</b></span><span class="day">11月8日 周日 <b>12:05 19:00</b></span><span class="day">11月9日 周一 <b>22:30</b></span><span class="day">11月10日 周二 <b>12:15</b></span><span class="day">11月11日 周三 <b>12:45</b></span></li><li><span class="where">Roxie Theater</span> <span class="day">11月7日 周六 <b>20:00</b></span><span class="day">11月9日 周一 <b>20:00</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-3e3fba1eb86100208c688e67beeb34a8a523b74c920aaa4f6b3476c404f3400c" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>LA BOLA NEGRA <span class="alt">La bola negra · 黑球</span></h4>
+<p class="facts">2026 · Javier Ambrossi、Javier Calvo · 159 分钟 · 剧情 / 战争</p>
+<p class="reason">三个时代的同性恋者在西班牙历史中穿行，戛纳最佳导演加圣塞巴斯蒂安观众奖，情感浓烈。</p>
+<p class="about">讲述三名同性恋男子在西班牙1932年、1937年和2017年三个不同时期的故事。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 21:45 · AMC Saratoga 14，共 32 场</summary><ul class="times"><li><span class="where">AMC Saratoga 14</span> <span class="day">11月6日 周五 <b>21:45</b></span><span class="day">11月7日 周六 <b>10:30 14:15 18:00 21:45</b></span><span class="day">11月8日 周日 <b>13:15 15:30 17:00 20:45</b></span><span class="day">11月9日 周一 <b>13:15 17:00 20:45</b></span><span class="day">11月10日 周二 <b>13:15 17:00 20:45</b></span><span class="day">11月11日 周三 <b>13:15 17:00 20:45</b></span></li><li><span class="where">AMC Mercado 20</span> <span class="day">11月7日 周六 <b>16:00</b></span><span class="day">11月8日 周日 <b>14:15</b></span><span class="day">11月9日 周一 <b>12:15</b></span><span class="day">11月10日 周二 <b>21:45</b></span><span class="day">11月11日 周三 <b>14:25</b></span></li><li><span class="where">Roxie Theater</span> <span class="day">11月13日 周五 <b>20:20</b></span><span class="day">11月14日 周六 <b>15:00 20:05</b></span><span class="day">11月15日 周日 <b>19:30</b></span><span class="day">11月17日 周二 <b>20:00</b></span><span class="day">11月19日 周四 <b>20:00</b></span><span class="day">11月21日 周六 <b>13:10</b></span><span class="day">11月22日 周日 <b>20:15</b></span></li><li><span class="where">The Castro</span> <span class="day">11月23日 周一 <b>18:30</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-caac0b968173bf71533bf0e916ce2a77525d65b1450c4f71762ca8d8276d2973" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>The Wizard of Oz <span class="alt">绿野仙踪</span></h4>
+<p class="facts">1939 · 维克多·弗莱明 · 102 分钟 · 冒险 / 奇幻 / 家庭</p>
+<p class="reason">从黑白堪萨斯跌进彩色奥兹，技术革命与童话魔力至今生效，歌舞场面为大银幕而生。</p>
+<p class="about">改编自L·弗兰克·鲍姆的儿童童话，讲述一位堪萨斯女孩跨越彩虹的旅程。</p>
+<details class="showings"><summary>场次 · 最近 11月6日 周五 22:00 · Stanford Theatre，共 5 场</summary><ul class="times"><li><span class="where">Stanford Theatre</span> <span class="day">11月6日 周五 <b>22:00</b></span><span class="day">11月7日 周六 <b>17:35 22:00</b></span><span class="day">11月8日 周日 <b>17:35 22:00</b></span></li></ul></details>
+<a class="go" href="https://stanfordtheatre.org/calendars/Happy%20Holidays%202026.html" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Fatherland <span class="alt">Ojczyzna · 故土</span></h4>
+<p class="facts">2026 · 帕维乌·帕夫利科夫斯基 · 82 分钟 · 剧情 / 历史</p>
+<p class="reason">帕夫利科夫斯基的黑白镜头里，托马斯·曼的返乡之旅成为流亡、妥协与父女裂痕的冷峻寓言。</p>
+<p class="about">灵感涉及托马斯·曼及其传记素材。1949年冷战期间，流亡美国16年的他与女儿从法兰克福前往魏玛，面对分裂国家与破裂家庭。</p>
+<details class="showings"><summary>场次 · 最近 11月7日 周六 09:45 · AMC Mercado 20，共 11 场</summary><ul class="times"><li><span class="where">AMC Mercado 20</span> <span class="day">11月7日 周六 <b>09:45</b></span><span class="day">11月8日 周日 <b>09:45</b></span><span class="day">11月9日 周一 <b>12:00</b></span><span class="day">11月10日 周二 <b>12:30</b></span><span class="day">11月11日 周三 <b>11:45</b></span></li><li><span class="where">Roxie Theater</span> <span class="day">11月7日 周六 <b>18:00</b></span><span class="day">11月8日 周日 <b>19:40</b></span><span class="day">11月9日 周一 <b>18:00</b></span><span class="day">11月10日 周二 <b>20:10</b></span><span class="day">11月14日 周六 <b>13:00</b></span><span class="day">11月16日 周一 <b>18:00</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-a2c8f3b2912ed725846d056311b0b1bf1612dda787678cba6a066da4203a4f0c" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>NAZA <span class="alt">附带伤亡</span></h4>
+<p class="facts">2026 · יובל אברהם、רחל שור · 77 分钟 · 纪录 / 战争</p>
+<p class="reason">以士兵自述直面加沙平民伤亡的系统性决策，冷静剪辑让证词本身成为最有力的控诉。</p>
+<p class="about">影片在特拉维夫夜晚屋顶拍摄，揭示以色列在加沙对巴勒斯坦平民大规模杀戮背后的系统。</p>
+<details class="showings"><summary>场次 · 最近 11月7日 周六 10:00 · Rialto Cinemas Elmwood，共 5 场</summary><ul class="times"><li><span class="where">Rialto Cinemas Elmwood</span> <span class="day">11月7日 周六 <b>10:00</b></span><span class="day">11月8日 周日 <b>10:00</b></span></li><li><span class="where">Roxie Theater</span> <span class="day">11月7日 周六 <b>17:15</b></span><span class="day">11月8日 周日 <b>17:40</b></span><span class="day">11月9日 周一 <b>18:00</b></span></li></ul></details>
+<a class="go" href="https://rialtocinemas.com/coming-soon-elm/naza-elm/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Once Upon a Time in Harlem <span class="alt">哈莱姆往事</span></h4>
+<p class="facts">2026 · William Greaves、David Greaves · 100 分钟 · 纪录</p>
+<p class="reason">格雷夫斯1972年拍下的哈莱姆文艺复兴聚会，一代黑人艺术家同框，被遗忘半个世纪的珍贵影像终于出土。</p>
+<p class="about">威廉·格雷夫斯去世十年后，这位电影人还留有一手：他记录的最重要事件，是1972年与哈莱姆文艺复兴在世人物共同策划的派对。</p>
+<details class="showings"><summary>场次 · 最近 11月7日 周六 11:50 · Rialto Cinemas Elmwood，共 23 场</summary><ul class="times"><li><span class="where">Rialto Cinemas Elmwood</span> <span class="day">11月7日 周六 <b>11:50 16:10 18:30</b></span><span class="day">11月8日 周日 <b>11:50 16:10 18:30</b></span><span class="day">11月9日 周一 <b>11:50 16:10 18:30</b></span><span class="day">11月10日 周二 <b>11:50 16:10 18:30</b></span><span class="day">11月11日 周三 <b>11:50 16:10 18:30</b></span><span class="day">11月12日 周四 <b>11:50 16:10 18:30</b></span></li><li><span class="where">Roxie Theater</span> <span class="day">11月7日 周六 <b>15:05</b></span><span class="day">11月8日 周日 <b>17:30</b></span><span class="day">11月10日 周二 <b>18:00</b></span><span class="day">11月11日 周三 <b>20:00</b></span><span class="day">11月14日 周六 <b>13:00</b></span></li></ul></details>
+<a class="go" href="https://rialtocinemas.com/coming-soon-elm/once-upon-a-time-in-harlem-elm/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>The Odyssey <span class="alt">奥德赛</span></h4>
+<p class="facts">2026 · 克里斯托弗·诺兰 · 173 分钟 · 冒险 / 动作 / 奇幻</p>
+<p class="reason">诺兰以IMAX胶片呈现归乡史诗，海难、神话与时间感交织，大银幕沉浸感是核心。</p>
+<p class="about">改编自荷马史诗，特洛伊战争后伊萨卡国王奥德修斯历经艰险踏上漫长归乡之旅。</p>
+<details class="showings"><summary>场次 · 最近 11月7日 周六 12:00 · AMC Mercado 20，共 6 场</summary><ul class="times"><li><span class="where">AMC Mercado 20</span> <span class="day">11月7日 周六 <b>12:00</b></span><span class="day">11月8日 周日 <b>12:00 20:00</b></span><span class="day">11月9日 周一 <b>15:00</b></span><span class="day">11月10日 周二 <b>15:00</b></span><span class="day">11月11日 周三 <b>11:30</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-dd3a92bcc9982ac4f8f9970f34248072df0b452029590b0b4685a237147b2941" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Kwaidan <span class="alt">怪談 · 怪谈</span></h4>
+<p class="facts">1965 · 小林正树 · 183 分钟 · 恐怖 / 奇幻 / 剧情</p>
+<p class="reason">小林正树以绘卷式布景与浓烈色彩拍四则怪谈，雪女与黑发两段美得摄人，是大银幕才有的幻觉。</p>
+<p class="about">四个故事：《黑发》武士抛弃妻子再婚后悔恨；《雪女》青年邂逅雪女；《无耳芳一》盲僧弹唱引鬼；《茶杯中》武士茶碗见陌生人面孔。</p>
+<details class="showings"><summary>场次 · 最近 11月7日 周六 14:30 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月7日 周六 <b>14:30</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/kwaidan" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Once Upon a Time in the Middle East <span class="alt">欢迎来龙餐馆</span></h4>
+<p class="facts">2026 · 文牧野 · 140 分钟 · 剧情 / 战争</p>
+<p class="reason">文牧野用中餐馆的烟火气反衬战争残酷，沈腾收起喜剧套路，情感冲击扎实。</p>
+<p class="about">徐福为养家还债远赴中东，结识大堂经理马俊生；两人以地道中国风味让龙餐馆生意兴隆，战争爆发打破平静。</p>
+<details class="showings"><summary>场次 · 最近 11月7日 周六 15:00 · AMC Mercado 20，共 5 场</summary><ul class="times"><li><span class="where">AMC Mercado 20</span> <span class="day">11月7日 周六 <b>15:00</b></span><span class="day">11月8日 周日 <b>15:30</b></span><span class="day">11月9日 周一 <b>14:45</b></span><span class="day">11月10日 周二 <b>19:00</b></span><span class="day">11月11日 周三 <b>15:30</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-8275990bf8a923022e62b5a92a8b94cfed86b05186f07ddd4f95b7c542220b31" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Rocky <span class="alt">洛奇</span></h4>
+<p class="facts">1976 · 约翰·G·阿维尔德森 · 120 分钟 · 剧情</p>
+<p class="reason">史泰龙自编自演的费城拳手，重点不在赢，而在证明自己存在过，奥斯卡最佳影片。</p>
+<p class="about">费城过气拳手洛基对售货员艾黛丽安一见倾心；为庆建国200周年，他获选参加一场“灰姑娘”式高奖金比赛，迎来事业转机。</p>
+<details class="showings"><summary>场次 · 最近 11月7日 周六 16:00 · AMC Mercado 20，共 13 场</summary><ul class="times"><li><span class="where">AMC Mercado 20</span> <span class="day">11月7日 周六 <b>16:00</b></span><span class="day">11月8日 周日 <b>16:00</b></span><span class="day">11月9日 周一 <b>19:00</b></span><span class="day">11月10日 周二 <b>19:00</b></span><span class="day">11月11日 周三 <b>19:00</b></span></li><li><span class="where">AMC Saratoga 14</span> <span class="day">11月7日 周六 <b>16:00</b></span><span class="day">11月11日 周三 <b>19:00</b></span></li><li><span class="where">Cinemark Century Great Mall 20</span> <span class="day">11月7日 周六 <b>16:20 19:00</b></span><span class="day">11月8日 周日 <b>16:15</b></span><span class="day">11月9日 周一 <b>19:00</b></span><span class="day">11月10日 周二 <b>19:00</b></span><span class="day">11月11日 周三 <b>19:00</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-4208ab367640edd9c1ae429435925fecdbe3eb104e696285ce0102c63e53c0b3" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>The Human Condition I: No Greater Love <span class="alt">人間の條件　第１部純愛篇／第２部激怒篇 · 人间的条件(I-II)</span></h4>
+<p class="facts">1959 · 小林正树 · 206 分钟 · 战争 / 剧情 / 历史</p>
+<p class="reason">小林正树六部曲开篇，一个日本职员在满洲的良知困境，冷静写下反战史诗的第一章。</p>
+<p class="about">1943年满洲，梶在矿山公司工作，因批评对中国工人的非人道榨取被派往现场，推行人道改革，面对军方与日方管理人员的阻挠。</p>
+<details class="showings"><summary>场次 · 最近 11月8日 周日 13:30 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月8日 周日 <b>13:30</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/human-condition-no-greater-love" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>The Magnificent Ambersons <span class="alt">伟大的安巴逊</span></h4>
+<p class="facts">1942 · 奥逊·威尔斯 · 88 分钟 · 剧情 / 爱情</p>
+<p class="reason">威尔斯第二部长片虽被删剪，仍以深焦调度和家族衰败的挽歌见出大师手笔，影史意义重要。</p>
+<p class="about">改编自布思·塔金顿获奖小说，影片回望二十世纪初印第安纳波利斯，记录一个富裕家族无可避免的衰落，以及进步浪潮对城市的重塑。</p>
+<details class="showings"><summary>场次 · 最近 11月8日 周日 15:30 · Alamo Drafthouse Cinema，共 2 场</summary><ul class="times"><li><span class="where">Alamo Drafthouse Cinema</span> <span class="day">11月8日 周日 <b>15:30</b></span></li><li><span class="where">Alamo Drafthouse Valley Fair</span> <span class="day">11月8日 周日 <b>15:30</b></span></li></ul></details>
+<a class="go" href="https://dothebay.com/events/2026/11/8/the-magnificent-ambersons-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Contempt <span class="alt">Le Mépris · 蔑视</span></h4>
+<p class="facts">1963 · 让-吕克·戈达尔 · 103 分钟 · 剧情 / 爱情</p>
+<p class="reason">戈达尔拍一部关于拍电影的電影，碧姬·芭铎与《奥德赛》一同碎裂，宽银幕爱情挽歌。</p>
+<p class="about">保罗与卡米尔原本幸福，制片人普罗可修邀他们会谈；面对滔滔不绝的丈夫，卡米尔渐生轻蔑，并被普罗可修吸引。</p>
+<details class="showings"><summary>场次 · 最近 11月8日 周日 18:30 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月8日 周日 <b>18:30</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/contempt" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Chiikawa the Movie: The Secret of the Mermaid Island <span class="alt">映画ちいかわ 人魚の島のひみつ · 超剧场版吉伊卡哇：人鱼之岛的秘密</span></h4>
+<p class="facts">2026 · 及川启 · 99 分钟 · 动画 / 家庭 / 冒险</p>
+<p class="reason">吉伊卡哇首部剧场版把可爱画风与黑暗冒险结合，人鱼岛段落有笑有紧张，大银幕看更有效果。</p>
+<p class="about">小可爱们收到「特别岛屿的招待」传单，为百倍报酬和限定美食登岛；他们在洞窟遇到塞壬与人鱼，伙伴四散、陷入危机，仍要齐心守护小岛。</p>
+<details class="showings"><summary>场次 · 最近 11月9日 周一 19:00 · Cinemark Century Great Mall 20</summary><ul class="times"><li><span class="where">Cinemark Century Great Mall 20</span> <span class="day">11月9日 周一 <b>19:00</b></span></li></ul></details>
+<a class="go" href="https://www.cinemark.com/theatres/ca-milpitas/cinemark-century-great-mall-20-xd-and-screenx" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Samurai Rebellion <span class="alt">上意討ち 拝領妻始末 · 夺命剑</span></h4>
+<p class="facts">1967 · 小林正树 · 120 分钟 · 剧情</p>
+<p class="reason">三船敏郎为被夺走的儿媳拔刀抗命，小林正树把武士片拍成关于尊严的悲剧。</p>
+<p class="about">三船敏郎饰演剑术精湛却安于平淡的笹原伊三郎；藩主命其子迎娶失宠情妇，年轻夫妇真心相爱后藩主反悔，伊三郎父子毅然抗命。</p>
+<details class="showings"><summary>场次 · 最近 11月11日 周三 19:00 · BAMPFA，共 2 场</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月11日 周三 <b>19:00</b></span><span class="day">11月21日 周六 <b>15:30</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/samurai-rebellion" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Soul Patrol</h4>
+<p class="facts">2026 · J.M. Harper · 100 分钟 · 纪录</p>
+<p class="reason">被埋没的黑人特种部队越战史，圣丹斯获奖纪录片，用重演与口述打捞一段被抹去的记忆。</p>
+<p class="about">越南战争首支黑人特种作战小队重聚讲述经历，揭开一段隐藏于敌后的美国军事史，并追问直面过去能否让亲历者获得平静。</p>
+<details class="showings"><summary>场次 · 最近 11月11日 周三 19:00 · AMC Mercado 20</summary><ul class="times"><li><span class="where">AMC Mercado 20</span> <span class="day">11月11日 周三 <b>19:00</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-aa44ab22b25a774852a6ad6caeba2aa2e7ddb620d4d34fb2d57766c4b52fd24e" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Band of Outsiders <span class="alt">Bande à part · 法外之徒</span></h4>
+<p class="facts">1964 · 让-吕克·戈达尔 · 97 分钟 · 犯罪 / 剧情 / 喜剧</p>
+<p class="reason">戈达尔最轻盈的一部：咖啡馆一分钟沉默、卢浮宫狂奔，把黑色电影拆成青春与自由的游戏。</p>
+<p class="about">两名年轻男子鼓动共同倾慕的女子协助在她家中抢劫，戈达尔以激进手法重构黑帮电影。</p>
+<details class="showings"><summary>场次 · 最近 11月12日 周四 19:00 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月12日 周四 <b>19:00</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/band-outsiders" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Paprika <span class="alt">パプリカ · 红辣椒</span></h4>
+<p class="facts">2006 · 今敏 · 90 分钟 · 动画 / 科幻 / 惊悚</p>
+<p class="reason">今敏把梦境游行拍成视觉狂欢，现实与妄想的边界被彻底冲垮，动画想象力的极限之作。你给《PERFECT BLUE》打过 5 星。</p>
+<p class="about">在这部迷幻科幻冒险动画中，白天是天才科学家的千叶敦子，夜晚化身梦境战士“红辣椒”，拯救世界需集合两种身份的力量。</p>
+<details class="showings"><summary>场次 · 最近 11月12日 周四 20:30 · Roxie Theater</summary><ul class="times"><li><span class="where">Roxie Theater</span> <span class="day">11月12日 周四 <b>20:30</b></span></li></ul></details>
+<a class="go" href="https://roxie.com/film/new-people-paprika/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Dune: Part One &amp; Dune: Part Two Double Feature</h4>
+<p class="facts">2026</p>
+<p class="reason">维伦纽瓦两章连看，沙虫、香料与权力阴谋铺满IMAX，一夜看完整个厄拉科斯。</p>
+
+<details class="showings"><summary>场次 · 最近 11月13日 周五 18:00 · AMC Dine-In Sunnyvale 12，共 3 场</summary><ul class="times"><li><span class="where">AMC Dine-In Sunnyvale 12</span> <span class="day">11月13日 周五 <b>18:00</b></span></li><li><span class="where">AMC Mercado 20</span> <span class="day">11月13日 周五 <b>18:00</b></span></li><li><span class="where">AMC Saratoga 14</span> <span class="day">11月13日 周五 <b>18:45</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-af3ef5d79500c883984230e8fcd993bfde7108135b3789fa03d6f356df480718" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Seven Samurai <span class="alt">七人の侍 · 七武士</span></h4>
+<p class="facts">1954 · 黑泽明 · 207 分钟 · 动作 / 剧情</p>
+<p class="reason">黑泽明史诗，七武士群像与雨中决战为大银幕而生；三小时叙事紧凑有力，勇气与阶级讽刺并存。</p>
+<p class="about">十六世纪，绝望的村民雇佣七位武士抵御山贼侵袭。黑泽明以三个多小时的史诗，将人情、战斗、勇气与希望熔于一炉。</p>
+<details class="showings"><summary>场次 · 最近 11月13日 周五 18:30 · Roxie Theater</summary><ul class="times"><li><span class="where">Roxie Theater</span> <span class="day">11月13日 周五 <b>18:30</b></span></li></ul></details>
+<a class="go" href="https://roxie.com/film/new-people-seven-samurai/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>All About My Mother <span class="alt">Todo sobre mi madre · 关于我母亲的一切</span></h4>
+<p class="facts">1999 · 佩德罗·阿莫多瓦 · 101 分钟 · 喜剧 / 剧情</p>
+<p class="reason">阿莫多瓦献给女性与表演的悲喜剧，情感浓烈又幽默，巴塞罗那色彩在大银幕上格外动人。</p>
+<p class="about">护士玛努埃拉骤然失去独自抚养的少年儿子，悲恸中前往巴塞罗那寻找孩子失联多年的父亲，并在这个特殊家庭中重获新生。</p>
+<details class="showings"><summary>场次 · 最近 11月13日 周五 19:15 · Alamo Drafthouse Cinema，共 2 场</summary><ul class="times"><li><span class="where">Alamo Drafthouse Cinema</span> <span class="day">11月13日 周五 <b>19:15</b></span></li><li><span class="where">Alamo Drafthouse Valley Fair</span> <span class="day">11月13日 周五 <b>19:15</b></span></li></ul></details>
+<a class="go" href="https://dothebay.com/events/2026/11/13/all-about-my-mother-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>The Searchers <span class="alt">搜索者</span></h4>
+<p class="facts">1956 · 约翰·福特 · 119 分钟 · 西部</p>
+<p class="reason">约翰·福特西部片丰碑，纪念碑谷构图与韦恩的复杂角色，让复仇故事带上种族与道德的阴影。</p>
+<p class="about">约翰·福特1956年执导的西部片代表作，以壮阔视觉构图、复杂人物塑造和深刻人性主题重新定义西部片，对后世影响深远。</p>
+<details class="showings"><summary>场次 · 最近 11月14日 周六 12:30 · Alamo Drafthouse Cinema，共 2 场</summary><ul class="times"><li><span class="where">Alamo Drafthouse Cinema</span> <span class="day">11月14日 周六 <b>12:30</b></span></li><li><span class="where">Alamo Drafthouse Valley Fair</span> <span class="day">11月14日 周六 <b>12:30</b></span></li></ul></details>
+<a class="go" href="https://dothebay.com/events/2026/11/14/the-searchers-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Taxi Driver <span class="alt">出租车司机</span></h4>
+<p class="facts">1976 · 马丁·斯科塞斯 · 113 分钟 · 犯罪 / 剧情</p>
+<p class="reason">斯科塞斯与德尼罗的都市夜行，霓虹、孤独与暴力把疯狂推到极致，影史绕不开的杰作。</p>
+<p class="about">马丁·斯科塞斯1976年的杰作，讲述一名精神濒临崩溃的纽约出租车司机为解救未成年妓女而走上暴力之路。</p>
+<details class="showings"><summary>场次 · 最近 11月14日 周六 15:30 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月14日 周六 <b>15:30</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/taxi-driver" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Volver <span class="alt">回归</span></h4>
+<p class="facts">2006 · 佩德罗·阿莫多瓦 · 120 分钟 · 喜剧 / 剧情 / 爱情</p>
+<p class="reason">阿莫多瓦把黑色幽默、母系家族与鬼魂传说揉在一起，佩内洛普·克鲁兹的表演光彩照人。</p>
+<p class="about">三代女性凭借善良、谎言和无尽活力，在东风、烈火、疯狂、迷信甚至死亡的考验中顽强生存。</p>
+<details class="showings"><summary>场次 · 最近 11月14日 周六 15:45 · Alamo Drafthouse Cinema，共 2 场</summary><ul class="times"><li><span class="where">Alamo Drafthouse Cinema</span> <span class="day">11月14日 周六 <b>15:45</b></span></li><li><span class="where">Alamo Drafthouse Valley Fair</span> <span class="day">11月14日 周六 <b>15:45</b></span></li></ul></details>
+<a class="go" href="https://dothebay.com/events/2026/11/14/volver-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Dune: Part Two <span class="alt">沙丘2</span></h4>
+<p class="facts">2024 · 丹尼斯·维伦纽瓦 · 166 分钟 · 科幻 / 冒险</p>
+<p class="reason">维伦纽瓦的沙丘世界视听规模庞大，沙虫骑行、沙暴与权力悲剧都值得大银幕沉浸。</p>
+<p class="about">保罗·厄崔迪与契妮及弗雷曼人结盟，向摧毁其家族的阴谋者复仇，并在挚爱与已知宇宙命运间面临抉择。</p>
+<details class="showings"><summary>场次 · 最近 11月14日 周六 18:15 · AMC Saratoga 14，共 12 场</summary><ul class="times"><li><span class="where">AMC Saratoga 14</span> <span class="day">11月14日 周六 <b>18:15</b></span><span class="day">11月15日 周日 <b>16:45</b></span><span class="day">11月16日 周一 <b>20:30</b></span><span class="day">11月17日 周二 <b>16:45</b></span></li><li><span class="where">AMC Dine-In Sunnyvale 12</span> <span class="day">11月14日 周六 <b>18:30</b></span><span class="day">11月15日 周日 <b>14:30</b></span><span class="day">11月16日 周一 <b>18:30</b></span><span class="day">11月17日 周二 <b>14:30</b></span></li><li><span class="where">AMC Mercado 20</span> <span class="day">11月14日 周六 <b>18:30</b></span><span class="day">11月15日 周日 <b>14:30</b></span><span class="day">11月16日 周一 <b>18:30</b></span><span class="day">11月17日 周二 <b>14:30</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-5b8a78f38836cabca3aa3f59307bcc854ec95bf549d3e37133858a16b2b1c95c" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>The Human Condition II: Road to Eternity <span class="alt">人間の條件　第３部望郷篇／第４部戦雲篇 · 人间的条件(III-IV)</span></h4>
+<p class="facts">1959 · 小林正树 · 178 分钟 · 战争 / 剧情 / 历史</p>
+<p class="reason">梶被抛进军营与前线，制度碾压与个人坚持正面相撞，六部曲中段最沉重的一部。</p>
+<p class="about">严冬中，梶被派往北满洲守备队，忍受严酷训练和老兵捉弄，并保护被当作赤色分子的新城等士兵；妻子远道来队探望。</p>
+<details class="showings"><summary>场次 · 最近 11月15日 周日 13:30 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月15日 周日 <b>13:30</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/human-condition-road-eternity" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Chicago <span class="alt">芝加哥</span></h4>
+<p class="facts">2002 · 罗伯·马歇尔 · 113 分钟 · 喜剧 / 犯罪 / 剧情</p>
+<p class="reason">爵士时代歌舞片巅峰之一，剪辑与舞台调度凌厉，犯罪、媒体与名气的讽刺至今好看。</p>
+<p class="about">两名经历相似的女子为成名展开争夺：维尔玛因枪杀出轨丈夫入狱，律师借媒体炒作；洛克茜也因杀男友涉案，被律师包装成受害者。</p>
+<details class="showings"><summary>场次 · 最近 11月18日 周三 20:20 · Roxie Theater</summary><ul class="times"><li><span class="where">Roxie Theater</span> <span class="day">11月18日 周三 <b>20:20</b></span></li></ul></details>
+<a class="go" href="https://roxie.com/film/staff-pick-chicago/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>The Killing <span class="alt">杀手</span></h4>
+<p class="facts">1956 · 斯坦利·库布里克 · 85 分钟 · 犯罪 / 惊悚 / 剧情</p>
+<p class="reason">库布里克早期黑色电影杰作，赛马场劫案以非线性叙事层层收紧，冷峻对白和宿命结局锋利。</p>
+<p class="about">库布里克对一场赛马场劫案的黑色电影刻画：以打破常规的时间叙事和锋利对白，展现这场野心勃勃的劫案。</p>
+<details class="showings"><summary>场次 · 最近 11月19日 周四 18:00 · Roxie Theater</summary><ul class="times"><li><span class="where">Roxie Theater</span> <span class="day">11月19日 周四 <b>18:00</b></span></li></ul></details>
+<a class="go" href="https://roxie.com/film/the-killing-4k-restoration/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Top Hat <span class="alt">礼帽</span></h4>
+<p class="facts">1935 · Mark Sandrich · 99 分钟 · 音乐 / 喜剧 / 爱情</p>
+<p class="reason">阿斯泰尔与罗杰斯的歌舞黄金搭档，羽毛舞裙与“Cheek to Cheek”在大银幕上才够味，是好莱坞歌舞片的巅峰之一。</p>
+<p class="about">一名美国舞者来到英国，对一位模特一见倾心；初次相遇却惹恼对方，而她还把他误认作自己那傻气十足的制片人。</p>
+<details class="showings"><summary>场次 · 最近 11月19日 周四 19:30 · Stanford Theatre，共 6 场</summary><ul class="times"><li><span class="where">Stanford Theatre</span> <span class="day">11月19日 周四 <b>19:30</b></span><span class="day">11月20日 周五 <b>19:30</b></span><span class="day">11月21日 周六 <b>15:45 19:30</b></span><span class="day">11月22日 周日 <b>15:45 19:30</b></span></li></ul></details>
+<a class="go" href="https://stanfordtheatre.org/calendars/Happy%20Holidays%202026.html" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Zhang Yimou’s Raise the Red Lantern (4K Restoration)</h4>
+<p class="facts">1991</p>
+<p class="reason">张艺谋色彩与构图巅峰，4K修复让深宅红灯笼的压迫感更逼人，巩俐的表演锋利而悲凉。</p>
+<p class="about">十九岁颂莲因家道中落辍学嫁入豪门，成为陈老爷第四房太太；宅中每晚以红灯笼标示被选中的妻子，她在妻妾争宠与屈辱中越陷越深。</p>
+<details class="showings"><summary>场次 · 最近 11月20日 周五 18:00 · Roxie Theater，共 3 场</summary><ul class="times"><li><span class="where">Roxie Theater</span> <span class="day">11月20日 周五 <b>18:00</b></span><span class="day">11月21日 周六 <b>18:35</b></span><span class="day">11月22日 周日 <b>17:40</b></span></li></ul></details>
+<a class="go" href="https://roxie.com/film/raise-the-red-lantern/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>He Who Gets Slapped <span class="alt">挨了耳光的男人</span></h4>
+<p class="facts">1924 · 维克多·斯约斯特洛姆 · 72 分钟 · 剧情 / 惊悚 / 爱情</p>
+<p class="reason">1924年默片珍品，马戏团小丑的悲喜剧与表现主义布景相得益彰，朗·钱尼的表演令人难忘。</p>
+<p class="about">男爵偷走他的发现、带他妻子私奔并当众扇他，男子加入巴黎马戏团当小丑，表演挨扇耳光，并迷恋一位歌舞女郎；她父亲要她嫁给男爵。</p>
+<details class="showings"><summary>场次 · 最近 11月20日 周五 19:30 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月20日 周五 <b>19:30</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/cinespin" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Aliens <span class="alt">异形2</span></h4>
+<p class="facts">1986 · 詹姆斯·卡梅隆 · 154 分钟 · 动作 / 惊悚 / 科幻</p>
+<p class="reason">卡梅隆把幽闭恐怖升级为太空陆战队动作史诗，蕾普莉的母性与战斗弧线在大银幕最过瘾。</p>
+<p class="about">承接《异形》的动作续集中，韦弗回归饰演唯一幸存者蕾普莉；她的说法起初受质疑，直到LV-426居民失踪，她加入陆战队调查。</p>
+<details class="showings"><summary>场次 · 最近 11月20日 周五 20:45 · Roxie Theater</summary><ul class="times"><li><span class="where">Roxie Theater</span> <span class="day">11月20日 周五 <b>20:45</b></span></li></ul></details>
+<a class="go" href="https://roxie.com/film/aliens-special-edition/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Touki Bouki <span class="alt">Touki-Bouki · 土狼之旅</span></h4>
+<p class="facts">1973 · Djibril Diop Mambéty · 91 分钟 · 剧情 / 爱情</p>
+<p class="reason">非洲电影里程碑：达喀尔青年做着巴黎梦，剪辑跳脱、配乐生猛，先锋气息与屠宰场的阴影至今鲜活。</p>
+<p class="about">两名被退学的年轻人无所事事、四处招摇撞骗，一心想去巴黎过奢侈生活；他们骑车闲逛，还诬陷一名迷恋莫里的有钱胖子。</p>
+<details class="showings"><summary>场次 · 最近 11月21日 周六 14:00 · Yerba Buena Center for the Arts</summary><ul class="times"><li><span class="where">Yerba Buena Center for the Arts</span> <span class="day">11月21日 周六 <b>14:00</b></span></li></ul></details>
+<a class="go" href="https://sf.funcheap.com/touki-bouki/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>The Lady from Shanghai <span class="alt">上海小姐</span></h4>
+<p class="facts">1947 · 奥逊·威尔斯 · 87 分钟 · 悬疑 / 犯罪 / 惊悚</p>
+<p class="reason">威尔斯与海华丝的黑色迷宫，人物各怀算计，结尾镜厅枪战是影史最惊艳的段落之一。</p>
+<p class="about">水手迈克尔在纽约救下遭打劫的艾尔莎，受其丈夫雇用上船；航行中他与艾尔莎情愫暗生，又卷入乔治提出的离奇杀局。</p>
+<details class="showings"><summary>场次 · 最近 11月21日 周六 14:30 · Balboa Theater</summary><ul class="times"><li><span class="where">Balboa Theater</span> <span class="day">11月21日 周六 <b>14:30</b></span></li></ul></details>
+<a class="go" href="https://dothebay.com/events/2026/11/21/the-lady-from-shanghai-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Raging Bull <span class="alt">愤怒的公牛</span></h4>
+<p class="facts">1980 · 马丁·斯科塞斯 · 129 分钟 · 剧情 / 历史</p>
+<p class="reason">德尼罗增重演活拳手的自我毁灭，斯科塞斯用黑白影像把暴力与嫉妒拍成一场宗教式受难。</p>
+<p class="about">斯科塞斯执导，德尼罗饰演布朗克斯中量级拳手杰克·拉莫塔，其狂暴野心带来拳坛成功，偏执嫉妒却撕裂与兄弟、妻子的关系。</p>
+<details class="showings"><summary>场次 · 最近 11月21日 周六 18:30 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月21日 周六 <b>18:30</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/raging-bull" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>The Human Condition III: A Soldier's Prayer <span class="alt">人間の條件　完結篇 · 人间的条件(V-VI)</span></h4>
+<p class="facts">1961 · 小林正树 · 190 分钟 · 战争 / 剧情 / 历史</p>
+<p class="reason">小林正树的史诗终章，梶在溃败、逃亡与收容所中守住最后一点人性，战后日本电影的高峰。</p>
+<p class="about">北满洲，梶与残败兵南逃，途中帮助逃难者，但众人因饥饿疲劳相继死去。梶到开拓村准备与苏军作战，随后开始俘虏收容所生活。</p>
+<details class="showings"><summary>场次 · 最近 11月22日 周日 13:30 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月22日 周日 <b>13:30</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/human-condition-soldiers-prayer" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Birds of War</h4>
+<p class="facts">2026 · Janay Boulos、Abd Alkader Habak · 85 分钟 · 纪录</p>
+<p class="reason">十三年私人影像串起战争与爱情，圣丹斯评审团特别奖；满目废墟里仍有不肯熄灭的温柔。你给《NAZA》打过 5 星。</p>
+<p class="about">影片通过13年的个人档案，讲述一名驻伦敦黎巴嫩记者与一名叙利亚活动人士兼摄影师的爱情故事，背景跨越革命、战争与流亡。</p>
+<details class="showings"><summary>场次 · 最近 11月22日 周日 15:00 · Roxie Theater</summary><ul class="times"><li><span class="where">Roxie Theater</span> <span class="day">11月22日 周日 <b>15:00</b></span></li></ul></details>
+<a class="go" href="https://roxie.com/film/birds-of-war/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>A Beautiful Mind <span class="alt">美丽心灵</span></h4>
+<p class="facts">2001 · 朗·霍华德 · 136 分钟 · 剧情 / 爱情</p>
+<p class="reason">数学家与幻觉的漫长搏斗被拍得克制动人，罗素·克劳撑起这部关于爱与坚持的传记片。</p>
+<p class="about">数学家小约翰·纳什读研时提出著名博弈理论，获得国际声誉，却受精神分裂症困扰；在妻子艾丽西亚相助下，他与疾病长期斗争。</p>
+<details class="showings"><summary>场次 · 最近 11月22日 周日 15:00 · AMC Dine-In Sunnyvale 12，共 3 场</summary><ul class="times"><li><span class="where">AMC Dine-In Sunnyvale 12</span> <span class="day">11月22日 周日 <b>15:00</b></span></li><li><span class="where">AMC Mercado 20</span> <span class="day">11月22日 周日 <b>15:00</b></span></li><li><span class="where">Cinemark Century Great Mall 20</span> <span class="day">11月22日 周日 <b>15:30</b></span></li></ul></details>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-c30b2861c52c0fda415f40225df0bb5d03fe7516fa89808d299c74b952dc7195" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item worth">
+<h4>Rouge <span class="alt">胭脂扣</span></h4>
+<p class="facts">1987 · 关锦鹏 · 96 分钟 · 剧情 / 奇幻 / 爱情</p>
+<p class="reason">梅艳芳与张国荣的哀艳对手戏，三十年代塘西风月叠着八十年代香港，鬼魂寻人写尽情之执。</p>
+<p class="about">报馆职员遇到登寻人广告的冷艳女子，发现她原是三十年代石塘咀红牌妓女如花的鬼魂；如花曾与十二少相恋，因身份悬殊遭陈家反对。</p>
+<details class="showings"><summary>场次 · 最近 11月22日 周日 18:00 · BAMPFA</summary><ul class="times"><li><span class="where">BAMPFA</span> <span class="day">11月22日 周日 <b>18:00</b></span></li></ul></details>
+<a class="go" href="https://bampfa.org/event/rouge" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article></div>
+</details>
+<details class="group"><summary>全部 <span class="count">120</span></summary>
+<div class="list compact"><article class="item">
+<h4>Street Fighter <span class="alt">街头霸王</span></h4>
+<p class="facts">2026 · Kitao Sakurai · 120 分钟 · 动作 / 奇幻</p>
+
+<p class="about">1993年，隆与肯因春丽邀请重返世界格斗王大赛，致命阴谋迫使他们面对彼此与过去。</p>
+<p class="when">11月6日 周五 19:00 · AMC Dine-In Sunnyvale 12，共 58 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-ea6f28476175c9719ea5f423142ac833c8f4d530969a9066b705086868393f22" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Pacific Heights <span class="alt">地狱来的房客</span></h4>
+<p class="facts">1990 · 约翰·施莱辛格 · 102 分钟 · 惊悚 / 剧情 / 悬疑</p>
+
+<p class="about">梅兰妮与马修购屋后为还贷款出租房屋，新租客却逐渐露出真面目，骚扰房客并步步紧逼。</p>
+<p class="when">11月6日 周五 19:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/floating-features-pacific-heights/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Cat in the Hat <span class="alt">戴帽子的猫</span></h4>
+<p class="facts">2026 · Erica Rivinoja、Alessandro Carloni · 108 分钟 · 动画 / 奇幻 / 喜剧</p>
+
+<p class="about">改编自苏斯博士同名绘本：一只古灵精怪的猫帮助因搬家而闷闷不乐的兄妹加比和塞巴斯蒂安重拾快乐，展开魔法与恶作剧的冒险。</p>
+<p class="when">11月6日 周五 19:00 · Cinemark CinéArts Santana Row，共 271 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-1c7a9162adeaaee435eb738cd3e5cbe6b05ca7f42b8e7bcaabd42ade2a2bbc93" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Ramayana: Rise of a Legend <span class="alt">रामायणम् · 罗摩衍那：王子传奇</span></h4>
+<p class="facts">2026 · 尼特什·提瓦瑞 · 208 分钟 · 奇幻 / 动作 / 冒险</p>
+
+<p class="about">改编自《罗摩衍那》：罗波那妄图以武力一统三界，毗湿奴化身罗摩降临，在十四年流放中降妖除魔，后因妻子悉多被掳而燃起战意。</p>
+<p class="when">11月6日 周五 19:00 · AMC Mercado 20，共 170 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-4171ec86ec6c2f6f9b5be48e653d189d872d176ef5eb446c9883dc605fc40c84" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Heated Rivalry: Episodes 3 + 4</h4>
+<p class="facts">2026</p>
+
+<p class="about">《HUNTER》与《ROSE》特别放映活动，11月6日开始，全程设有中场休息。</p>
+<p class="when">11月6日 周五 19:00 · Cinemark Century Great Mall 20，共 14 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-03efbd3115304696d2e96544316cf75da21bc105fc87b63c7d89906c6f31e945" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Heated Rivalry: Episodes 1 &amp; 2</h4>
+<p class="facts">2026</p>
+
+<p class="about">《Heated Rivalry》第1、2集的特别活动，11月6日开始，整个节目中设有中场休息。</p>
+<p class="when">11月6日 周五 19:00 · AMC Mercado 20，共 13 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-0bd54f5998bb52a1bde50b35cbbee750b78cf90ed322aeb4c46365e15ae5d9d5" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Paradise Lost <span class="alt">실낙원 · 失乐园</span></h4>
+<p class="facts">2026 · 延尚昊 · 101 分钟 · 惊悚 / 剧情 / 科幻</p>
+
+<p class="about">改编自吴成恩小说《黑色地狱》：母亲柳昭英在“露营校车失踪案”中失去孩子，九年后已长大的孩子突然回到她身边。</p>
+<p class="when">11月6日 周五 19:00 · AMC Mercado 20，共 11 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-da1e9adac8ee462d54c0e31c6bd449d9cc57e854fa52b580d5ae902769ea6894" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Scene <span class="alt">சீன்</span></h4>
+<p class="facts">2026 · 吉图·马达万 · 149 分钟 · 动作 / 喜剧 / 犯罪</p>
+
+<p class="about">一名警官被迫重启多年前未结的案件，并与一支混乱又麻烦的团队合作，在案情转折中展开难以预测的调查。</p>
+<p class="when">11月6日 周五 19:00 · Cinemark Century Great Mall 20，共 66 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-bfdc585f601b83558c898f2cfc5614956577ab22124924a6ccdcd655ccd007a1" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Clayface <span class="alt">泥面人</span></h4>
+<p class="facts">2026 · 詹姆斯·沃特金斯 · 109 分钟 · 恐怖 / 惊悚 / 科幻</p>
+
+<p class="about">好莱坞新星马特·哈根遭犯罪头目毁容，为恢复容貌接受先进治疗，却意外陷入疯狂，走上复仇之路。</p>
+<p class="when">11月6日 周五 19:15 · AMC Saratoga 14，共 119 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-76c644a473ea71b36aa28bde6b1ae30028dd0b86ab8cce56644a0cd51b813d50" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Jimmy</h4>
+<p class="facts">2026 · Aaron Burns · 120 分钟 · 剧情 / 历史</p>
+
+<p class="about">讲述美国演员詹姆斯·斯图尔特的一生，展现其关于勇气、目标与信仰的励志故事。</p>
+<p class="when">11月6日 周五 19:15 · AMC Saratoga 14，共 18 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-8fb41b2b0d469021a4ad9eac3528b346cb7a7b1e9d0f47f64a758d111b58d7d9" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Mookuthi Amman 2 <span class="alt">மூக்குத்தி அம்மன் 2</span></h4>
+<p class="facts">2026 · Sundar C · 144 分钟 · 奇幻 / 剧情 / 喜剧</p>
+
+<p class="about">王后为从入侵敌人手中保护王子儿子而牺牲自己；女神归来守护孩子，并对抗化身新邪恶的神秘女子。</p>
+<p class="when">11月6日 周五 19:15 · AMC Mercado 20，共 20 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-c83762b922be239582caf461cf7c3a4360cf076f644e235958d75fe3bb25d5dd" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Wicker <span class="alt">柳条人</span></h4>
+<p class="facts">2026 · Eleanor Wilson、Alex Huston Fischer · 105 分钟 · 爱情 / 奇幻 / 喜剧</p>
+
+<p class="about">海边小镇一名散发臭味的打渔女饱受邻居嘲讽，她为自己找了个柳条丈夫，这段离经叛道的爱情引发怒火与嫉妒。</p>
+<p class="when">11月6日 周五 19:30 · Alamo Drafthouse Valley Fair，共 45 场</p>
+<a class="go" href="https://drafthouse.com/sf/show/wicker" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Summer Holidays</h4>
+<p class="facts">2026 · Srikar Nayan G · 144 分钟 · 喜剧 / 剧情 / 家庭</p>
+
+<p class="about">一名城市男孩在戈达瓦里村庄的祖父母家过暑假，结识一位充满活力的当地报童，两人通过乡间冒险结下难忘童年情谊。</p>
+<p class="when">11月6日 周五 19:45 · Cinemark Century Great Mall 20，共 22 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-63cd0e1a06cd2c2fadac48a45e66697ba4e87d7e9e0a6dbb88d2fd719d2ccd04" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Robert Shields: My Life as a Robot</h4>
+<p class="facts">2025 · Mark C. Bonn · 87 分钟 · 纪录 / 喜剧 / 家庭</p>
+
+<p class="about">这部获奖纪录片讲述艺术家罗伯特·希尔兹的生平：他从好莱坞蜡像馆前的机器人表演起步，后来与妻子洛琳推出 CBS 综艺秀。</p>
+<p class="when">11月6日 周五 20:00 · Brava Theater</p>
+<a class="go" href="https://dothebay.com/events/2026/11/6/robert-shields-my-life-as-a-robot-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The History of Concrete <span class="alt">混凝土简史</span></h4>
+<p class="facts">2026 · John Wilson · 101 分钟 · 纪录 / 喜剧</p>
+
+<p class="about">参加霍尔马克电影创作销售研讨会后，电影制作人约翰·威尔逊试图用同样套路推销一部关于混凝土的纪录片。</p>
+<p class="when">11月6日 周五 20:15 · Roxie Theater，共 4 场</p>
+<a class="go" href="https://roxie.com/film/the-history-of-concrete/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Devils <span class="alt">卢丹的恶魔</span></h4>
+<p class="facts">1971 · 肯·罗素 · 112 分钟 · 剧情 / 历史 / 恐怖</p>
+
+<p class="about">改编自《卢丹的恶魔》及同名戏剧。17世纪法国，于尔班·格兰第神父被控对修女施巫术，修道院集体附魔令他卷入迫害。</p>
+<p class="when">11月6日 周五 20:15 · Roxie Theater，共 7 场</p>
+<a class="go" href="https://roxie.com/film/ken-russells-the-devils-4k-restoration/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Drummer Boy</h4>
+<p class="facts">2026 · Ben Smallbone、Joel Smallbone · 129 分钟 · 战争 / 爱情 / 音乐</p>
+
+<p class="about">美国独立战争爆发，少年鼓手、被奴役女子和分裂家庭各自寻找自由；音乐在战火与失去中承载希望。</p>
+<p class="when">11月6日 周五 20:20 · Cinemark Century Great Mall 20，共 49 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-8a5c716ddf46fcd30cf9a69e416d1002406bb7b51dc94940fff5154a2d043807" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Other Mommy <span class="alt">另一个妈妈</span></h4>
+<p class="facts">2026 · 罗布·萨维奇 · 93 分钟 · 恐怖</p>
+
+<p class="about">贝拉与父母关系日渐紧张，一个与母亲长相相同的邪恶实体出现并威胁其家人安全。</p>
+<p class="when">11月6日 周五 20:30 · Cinemark Century Great Mall 20，共 28 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-d8f0b4a1e3fe0739e5a8b6d34049ff4ea96e3c06a581a890ff18e51b922b5d36" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Littermates</h4>
+<p class="facts">2026 · Michael Woloson、Scott Tinkham · 88 分钟 · 恐怖</p>
+
+<p class="about">在一场神秘战争的混乱中，两名袭击受害者躲进英国乡间小屋，一位神秘看守人坚称他们不能离开。</p>
+<p class="when">11月6日 周五 21:45 · Alamo Drafthouse Cinema，共 3 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/6/littermates-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Heated Rivalry: Episodes 5 + 6</h4>
+<p class="facts">2026</p>
+
+<p class="about">《I’LL BELIEVE IN ANYTHING》与《THE COTTAGE》特别活动，11月6日开始，全程设中场休息。</p>
+<p class="when">11月6日 周五 22:00 · Cinemark Century Great Mall 20，共 13 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-a42dda71fdfb49937a5f610b13f1a8fe7b22942cfa02143ce49bca7553dceb16" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Aadarsha Kutumbam House No: 47 - AK47 <span class="alt">ఆదర్శ కుటుంబం హౌస్ నెం: 47 - AK47</span></h4>
+<p class="facts">2026 · Trivikram Srinivas · 149 分钟 · 家庭 / 喜剧 / 动作</p>
+
+<p class="about">一个关系紧密的家庭遭遇意外危机，亲情纽带受到威胁，他们不得不重新审视价值观并努力保持团结。</p>
+<p class="when">11月6日 周五 22:25 · Cinemark Century Great Mall 20，共 25 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-be95bfd44bb1c68851b29edb95cafb46fa79b4b1c788d024ab5928f849757756" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Jailer 2 <span class="alt">ஜெயிலர் 2 · 狱卒2</span></h4>
+<p class="facts">2026 · நெல்சன் திலீப்குமார் · 163 分钟 · 动作 / 喜剧 / 剧情</p>
+
+<p class="about">退役狱警穆图维尔隐姓埋名与家人平静生活，因犯罪集团追查而暴露，再度迎战新敌。</p>
+<p class="when">11月6日 周五 22:30 · AMC Mercado 20，共 28 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-37a428f74ce3a2a0255d110cab5d900e73c0819d6dd1fd0783ce9ef42202100c" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Verity <span class="alt">不存在的罪人</span></h4>
+<p class="facts">2026 · 迈克尔·肖沃特 · 117 分钟 · 悬疑 / 惊悚</p>
+
+<p class="about">知名作家维莉蒂受伤后，洛温受聘代笔并住进她家，意外发现令人不安的自传手稿，陷入真假难辨的秘密、操纵与执念。</p>
+<p class="when">11月6日 周五 23:00 · AMC Dine-In Sunnyvale 12，共 11 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-0d14f92b3403cd47d9e642836006b8ef28ba01b089409210297b225f492c87b5" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Everest: The Other Side <span class="alt">珠穆朗玛：云中彼岸</span></h4>
+<p class="facts">2026 · 金国威、伊丽莎白·柴·瓦沙瑞莉 · 115 分钟 · 纪录</p>
+
+<p class="about">记录登山滑雪运动员吉姆·莫里森2025年10月沿珠峰北坡霍恩拜因雪沟登顶，并完成该路线全球首次滑雪速降。</p>
+<p class="when">11月7日 周六 09:25 · Cinemark Century Great Mall 20，共 22 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-e5f25752760b266228f30999bddc21520f718306a95650377db12a11922f4fc8" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Only Living Pickpocket in New York <span class="alt">纽约最后的扒手</span></h4>
+<p class="facts">2026 · 诺亚·塞根 · 88 分钟 · 犯罪 / 剧情 / 惊悚</p>
+
+<p class="about">纽约老派扒手哈利自80年代靠扒窃现金谋生，如今街头目标变成可追踪手机、无现金钱包和装加密货币与枪支的健身包。</p>
+<p class="when">11月7日 周六 09:30 · AMC Saratoga 14，共 11 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-7871f73fdf18b9c7370baf395fecdfb03cc4f1da59678190e22ddb58450d8025" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Sense and Sensibility <span class="alt">理智与情感</span></h4>
+<p class="facts">2026 · Georgia Oakley · 132 分钟 · 爱情 / 剧情 / 历史</p>
+
+<p class="about">改编自简·奥斯汀同名名著：达什伍德家失去庄园继承权后迁居乡间，埃莉诺与玛丽安在压力下面对求婚与心碎。</p>
+<p class="when">11月7日 周六 09:45 · AMC Mercado 20，共 5 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-54c27778239ef1cdc3d1838d1027188cca78feca5f40e8c3c7c3d956a9e605e0" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Christmas at the Kringles <span class="alt">圣诞邪邻</span></h4>
+<p class="facts">2026 · Kevin Lewis · 100 分钟 · 动作 / 恐怖 / 喜剧</p>
+
+<p class="about">一家搬进郊区新居，邻居全年庆祝圣诞；儿子与其亲近，父母渐觉异样，马克联手落魄圣诞老人营救。</p>
+<p class="when">11月7日 周六 09:45 · AMC Mercado 20，共 5 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-7f0247f279f731dbd0b319d8d6dc7992284c1867877fca180cea2f8583350f9b" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Heart of the Beast <span class="alt">野兽之心</span></h4>
+<p class="facts">2026 · 大卫·阿耶 · 101 分钟 · 冒险 / 惊悚</p>
+
+<p class="about">前陆军特种兵与退役战犬在阿拉斯加坠机后，于极地荒野中相互扶持求生。</p>
+<p class="when">11月7日 周六 11:10 · Cinemark Century Great Mall 20，共 12 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-c93d74eb96c3634a520e67278bd5bb413dac04dfc40c1bfa07f33de5813292b3" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Mosquito Bowl <span class="alt">蚊子杯：最后一役</span></h4>
+<p class="facts">2026 · 彼得·伯格 · 128 分钟 · 历史 / 剧情 / 战争</p>
+
+<p class="about">改编自巴兹·贝辛格同名非虚构作品。珍珠港事件后，四位大学生橄榄球明星加入海军陆战队，体会兄弟情谊与战争代价。</p>
+<p class="when">11月7日 周六 11:45 · AMC Mercado 20，共 5 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-31379624b3cacbfa339ee4b22da171d1cbd0aa1de7a2e6283b6f6752468c3457" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Stray Kids World Tour 'RUN IT' LIVE VIEWING</h4>
+<p class="facts">2026 · 音乐</p>
+
+<p class="about">Stray Kids将世界巡演“RUN IT”演唱会通过影院直播呈现，八名成员表演高能量舞蹈。</p>
+<p class="when">11月7日 周六 12:00 · AMC Dine-In Sunnyvale 12，共 8 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-b99eea99f8bc08502103b060ebd9768d8003fd25873eef0b98047a4512866cd1" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Las almas ni los ojos</h4>
+<p class="facts">2026 · María Canela Reyes、César Alejandro Jaimes · 75 分钟 · 剧情</p>
+
+<p class="about">15岁逃离暴力的帕乔离开安塞尔马四十年，一张照片唤起归乡渴望；归途如星际航行，他寻找遗落之物，死亡痕迹与记忆交织。</p>
+<p class="when">11月7日 周六 13:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/las-almas-ni-los-ojos-neither-souls-nor-eyes/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Sideways Screening with Whitehall Lane Winery &amp; Special Guest Rex Pickett</h4>
+
+
+
+<p class="when">11月7日 周六 13:00 · Cameo Cinema in St. Helena</p>
+<a class="go" href="https://dothebay.com/events/2026/11/7/sideways-screening-with-whitehall-lane-winery-special-guest-rex-pickett-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>New People: My Undesirable Friends: Part 2 – Exile (Chapters 4-5)</h4>
+<p class="facts">2026</p>
+
+<p class="about">一群被认定为“外国特工”的年轻记者在独立媒体遭关闭后匆匆离开莫斯科；影片记录他们流亡多国、继续报道真相的四年。</p>
+<p class="when">11月7日 周六 14:30 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/my-undesirable-friends-part-2-exile-chapters-4-5/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Dalai Lama: My Religion Is Kindness</h4>
+<p class="facts">2026</p>
+
+<p class="about">影片通过第十四世达赖喇嘛与荷兰民众、王室成员及艺术家知识分子的长期交往，呈现他关于内心平静、关爱地球与万物相连的信息。</p>
+<p class="when">11月7日 周六 15:15 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/the-dalai-lama-my-religion-is-kindness/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Southland Tales <span class="alt">南方传奇</span></h4>
+<p class="facts">2007 · 理查德·凯利 · 145 分钟 · 科幻 / 惊悚 / 喜剧</p>
+
+<p class="about">2005年独立日，得州亚比里安市在蘑菇云中消失，引发第三次世界大战；失忆动作明星鲍克瑟邂逅色情片女星，攸关人类命运的故事展开。</p>
+<p class="when">11月7日 周六 15:15 · Alamo Drafthouse Cinema，共 2 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/7/southland-tales-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Being Heumann</h4>
+<p class="facts">2026 · 夏安·海德 · 127 分钟 · 剧情 / 历史</p>
+
+<p class="about">1977年，朱迪·休曼与百余名残障权利抗议者将愤怒化为抗争，直言制度坏了，不是他们。</p>
+<p class="when">11月7日 周六 18:20 · Roxie Theater，共 3 场</p>
+<a class="go" href="https://roxie.com/film/new-people-being-heumann/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Sword <span class="alt">名劍 · 名剑</span></h4>
+<p class="facts">1980 · 谭家明 · 85 分钟 · 动作</p>
+
+<p class="about">两把绝世名剑引发江湖争夺；李蓦然寻花千树比剑，途中与盈盈互生情愫，又重逢旧爱陈琪琪，其夫因名剑与嫉恨派人暗杀他。</p>
+<p class="when">11月7日 周六 18:30 · BAMPFA</p>
+<a class="go" href="https://bampfa.org/event/sword" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Wild at Heart <span class="alt">我心狂野</span></h4>
+<p class="facts">1990 · 大卫·林奇 · 125 分钟 · 犯罪 / 惊悚 / 爱情</p>
+
+<p class="about">塞勒出狱后与萝拉团聚，萝拉母亲派旧情人追踪他们。途中两人回忆往事，又卷入贩毒团伙，塞勒再次入狱，多年后萝拉带儿子接他。</p>
+<p class="when">11月7日 周六 19:05 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/wild-at-heart/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Udta Teer <span class="alt">उड़ता तीर</span></h4>
+<p class="facts">2026 · 阿卡什·考什克 · 137 分钟 · 喜剧 / 动作</p>
+
+<p class="about">一名失忆的巴基斯坦间谍醒来后，相信自己是一名爱国的印度反恐官员。</p>
+<p class="when">11月7日 周六 20:10 · Cinemark Century Great Mall 20，共 9 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-6754cdad2ea5e7b9f6e34e23babc0dc6088e8eef398376d12400cdab4a0d05bb" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Free “Blankets &amp; Blockbusters” Toy Story 5 Outdoor Movie (Thrive City)</h4>
+
+
+
+<p class="when">11月8日 周日 12:00 · Thrive City</p>
+<a class="go" href="https://sf.funcheap.com/free-blankets-blockbusters-toy-story-5-outdoor-movie-thrive-city/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Studio 8 2026: Babeth Mondini VanLoo (Studio 8 Legacy Award)</h4>
+
+
+<p class="about">2026年Studio 8 Legacy Award授予荷兰艺术家、电影人Babeth Mondini VanLoo；她是Joseph Beuys的学生，纪录片跨越五十年。放映后颁奖并与Tanya Zimbardo对谈。</p>
+<p class="when">11月8日 周日 12:30 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/studio-8-2026/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Los Conductos <span class="alt">Los conductos · 管道</span></h4>
+<p class="facts">2020 · Camilo Restrepo · 70 分钟 · 剧情</p>
+
+<p class="about">以麦德林为背景的实验之作：青年平克逃离“教士”领导的危险教派，藏身非法T恤工厂，试图掌握命运，却难摆脱鬼魂般缠扰。</p>
+<p class="when">11月8日 周日 13:20 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/los-conductos/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Marianne &amp; Leonard: Words of Love <span class="alt">玛丽安和莱昂纳德：情话</span></h4>
+<p class="facts">2019 · Nick Broomfield · 98 分钟 · 纪录 / 音乐</p>
+
+<p class="about">影片讲述莱昂纳德·科恩与挪威缪斯玛丽安·伊伦的持久爱情，从希腊的自由恋爱时光，到他成为成功音乐人后两人关系的变化。</p>
+<p class="when">11月8日 周日 14:00 · The Freight</p>
+<a class="go" href="https://dothebay.com/events/2026/11/8/marianne-leonard-words-of-love-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>EXO PLANET #6 - EXhOrizon [dot] in CINEMAS</h4>
+<p class="facts">2026</p>
+
+<p class="about">EXO第六次巡演的[dot]安可终场演唱会登上全球影院，2026年11月8日现场直播，部分地区延迟放映，配沉浸式音效。</p>
+<p class="when">11月8日 周日 15:00 · Cinemark Century Great Mall 20</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-9d92977ace921b10a230015ef189888be8b8b0badc7d6a40f839636aee8b23fd" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Everything for Sale <span class="alt">Wszystko na sprzedaż · 一切可售</span></h4>
+<p class="facts">1969 · 安杰伊·瓦伊达 · 105 分钟 · 剧情</p>
+
+<p class="about">一部电影即将开机，男主角却下落不明，朋友、导演和妻子各自出动寻找。</p>
+<p class="when">11月8日 周日 15:10 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/everything-for-sale/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>How to Clean a House in Ten Easy Steps</h4>
+<p class="facts">2026 · Carolina Gonzalez Valencia · 80 分钟 · 纪录</p>
+
+<p class="about">一对母女创造共同的幻想，探索她们在移民、劳动与女性身份上交织的经历。</p>
+<p class="when">11月8日 周日 15:10 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/how-to-clean-a-house-in-10-easy-steps/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Hold on to Your Music - A Mother's Legacy</h4>
+<p class="facts">2026 · Josh Aronson、Adam R. Wood · 77 分钟 · 纪录 / 历史</p>
+
+<p class="about">影片讲述三代犹太女性因音乐与创伤而相连，从维也纳到伦敦再到洛杉矶，面对大屠杀的遗产并寻求救赎。</p>
+<p class="when">11月8日 周日 17:00 · Jewish Community Center of San Francisco</p>
+<a class="go" href="https://dothebay.com/events/2026/11/8/hold-on-to-your-music-a-mother-s-legacy-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Studio 26: Fantom Classroom of the Art Institute</h4>
+
+
+
+<p class="when">11月9日 周一 19:00 · Artists' Television Access</p>
+<a class="go" href="https://www.atasite.org/event/studio-26-fantom-classroom-of-the-art-institute-3/2026-11-09/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>AMC Screen Unseen: November 18</h4>
+
+
+
+<p class="when">11月9日 周一 19:00 · AMC Dine-In Sunnyvale 12，共 3 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-a8528350e395218134aaf21f20e8c05168e8c653faa8f2bf81ea1991dd2d1cb8" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Cinemark Secret Movie Series</h4>
+<p class="facts">2025</p>
+
+
+<p class="when">11月9日 周一 19:00 · Cinemark Century Great Mall 20</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-8a7a6a8a85d10941b1a14ead4219fca24d047c960e6a9506f4f4224ef1ff0ca8" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The French Lieutenant's Woman <span class="alt">法国中尉的女人</span></h4>
+<p class="facts">1981 · Karel Reisz · 124 分钟 · 剧情 / 爱情 / 历史</p>
+
+<p class="about">维多利亚时代，年轻绅士查尔斯来到莱姆镇，结识被称作“法国中尉的女人”的萨拉；他同情并想帮助她，两人逐渐坠入爱河。</p>
+<p class="when">11月9日 周一 20:00 · The Village at Corte Madera</p>
+<a class="go" href="https://dothebay.com/events/2026/11/9/the-french-lieutenant-s-woman-1981-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Ghost Soldier <span class="alt">鬼影战士</span></h4>
+<p class="facts">2026 · 威廉·尤班克 · 90 分钟 · 动作 / 惊悚</p>
+
+<p class="about">隐居的菲茨曾是退役特种部队士兵和先进武器研发专家；外国公司企图强占社区土地时，他挺身而出，成为敌人始料未及的对手。</p>
+<p class="when">11月10日 周二 14:00 · AMC Dine-In Sunnyvale 12，共 174 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-c177ec9fb28d2b899ab0ba62820c91c061945e569ee33c359e128058e124b286" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>THX 1138 <span class="alt">500年后</span></h4>
+<p class="facts">1971 · 乔治·卢卡斯 · 86 分钟 · 科幻 / 剧情</p>
+
+<p class="about">未来地下世界，人们剃光头、只有编号。THX1138在室友启发下停药，思想复苏，被判刑后开始逃亡。</p>
+<p class="when">11月10日 周二 18:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/thx-1138-35mm/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>(Extra)Ordinary Rendition(s)</h4>
+
+
+
+<p class="when">11月10日 周二 19:00 · Artists' Television Access</p>
+<a class="go" href="https://www.atasite.org/event/extraordinary-renditions/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Henry: Portrait of a Serial Killer <span class="alt">杀手的肖像</span></h4>
+<p class="facts">1986 · 约翰·麦克诺顿 · 83 分钟 · 犯罪 / 恐怖 / 惊悚</p>
+
+<p class="about">亨利热衷杀人，把杀人当成艺术；他把房子租给奥蒂斯，奥蒂斯的姐姐来访后，他的杀人冲动再次萌动。</p>
+<p class="when">11月10日 周二 19:45 · Alamo Drafthouse Cinema，共 2 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/10/henry-portrait-of-a-serial-killer-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Go Like This</h4>
+<p class="facts">1985 · Rock Ross · 3 分钟</p>
+
+<p class="about">一部躁动而印象化的黑白作品，夜游旧金山街道并途经夜店，洋溢兴奋、匿名与冒险的活力，霓虹延伸至无限。</p>
+<p class="when">11月11日 周三 18:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/rock-ross-go-like-this-16mm/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Arab Film Festival 2026</h4>
+
+
+<p class="about">该节目延续电影节支持巴勒斯坦声音的传统，以多部短片呈现巴勒斯坦人的日常生活、占领下的困境，以及他们的希望与梦想。</p>
+<p class="when">11月11日 周三 18:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/arab-film-festival-2026/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>How to Rob a Bank <span class="alt">如何干一票大的</span></h4>
+<p class="facts">2026 · 大卫·雷奇 · 122 分钟 · 动作 / 犯罪 / 惊悚</p>
+
+<p class="about">别人抢劫东躲西藏，他们却直播全网教学；别人为暴富，他们只为分给需要的人。规则不公、欲望横流，谁才是真正的掠夺者？</p>
+<p class="when">11月11日 周三 18:30 · Cinemark Century Great Mall 20，共 195 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-4a50c7dc4e0621b99c1901d4fd1305810a8f273aaede2b66045bd5e7e9d151cc" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Crocodile Dose</h4>
+<p class="facts">2026 · Jason Waters · 70 分钟 · 喜剧</p>
+
+<p class="about">夏日，大学归来的柯蒂斯、吉米和亚伯为赴柯蒂斯前女友简的派对，展开24小时嗑药酗酒之旅；柯蒂斯与简提前重逢后情绪失控，失去关系与现实。</p>
+<p class="when">11月11日 周三 19:45 · Alamo Drafthouse Valley Fair</p>
+<a class="go" href="https://drafthouse.com/sf/show/weird-wednesday-crocodile-dose-ee" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Ebenezer <span class="alt">寒夜怪谈</span></h4>
+<p class="facts">2026 · 蒂·韦斯特 · 115 分钟 · 奇幻 / 喜剧</p>
+
+<p class="about">改编自《圣诞颂歌》。年迈吝啬商人被故友亡灵及圣诞过去、现在、未来幽灵造访，直面过往，踏上寻求幸福与救赎的超自然旅程。</p>
+<p class="when">11月12日 周四 14:00 · AMC Dine-In Sunnyvale 12，共 216 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-b347206b2d270ae9f8f57d76ed2383315572d4b7baed60350adc1b4fec50eb5b" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Mouse <span class="alt">迷鼠</span></h4>
+<p class="facts">2026 · Alex Thompson、Kelly O'Sullivan · 120 分钟 · 剧情 / 喜剧</p>
+
+<p class="about">少女在高三前的夏天与最亲密的朋友突然疏远，努力寻找立足点，却与好友的母亲发展出一段意外而复杂的关系。</p>
+<p class="when">11月12日 周四 16:00 · AMC Mercado 20，共 7 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-4ae5a5e8cf82f8900aafaf8e7c76813a738f0e9cf824319cafcaa5898b10ae63" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Victorian Psycho <span class="alt">维多利亚时代的精神病人</span></h4>
+<p class="facts">2026 · Zachary Wigon · 102 分钟 · 恐怖 / 惊悚</p>
+
+<p class="about">1858年，一名年轻而古怪的家庭教师来到偏远哥特式庄园，工作人员开始莫名失踪，庄园主怀疑她有问题。</p>
+<p class="when">11月12日 周四 16:00 · AMC Mercado 20，共 34 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-fe9bd0b18a33f85ba9064634e107c565e8d8f3edeeff282c45274f8a91c2f0ba" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Flying Down to Rio <span class="alt">飞到里约</span></h4>
+<p class="facts">1933 · Thornton Freeland · 89 分钟 · 喜剧 / 爱情</p>
+
+<p class="about">飞行员兼乐队领队罗杰因与女宾客调情屡致乐队被解雇，又爱上已订婚的巴西美女贝琳哈。乐队受邀赴里约演出，他驾机送她回家。</p>
+<p class="when">11月12日 周四 17:50 · Stanford Theatre，共 8 场</p>
+<a class="go" href="https://stanfordtheatre.org/calendars/Happy%20Holidays%202026.html" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>SFTFF 2026 – COMEDY</h4>
+<p class="facts">2026</p>
+
+<p class="about">2026年旧金山跨性别电影节以喜剧短片单元开幕，展映四部出色而搞笑的短片，包括《Cockroach》等。</p>
+<p class="when">11月12日 周四 19:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/sftff-2026-comedy/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Around Women on the Verge of a Nervous Breakdown</h4>
+<p class="facts">14 分钟</p>
+
+<p class="about">这支幕后短片收录演员访谈，他们谈论参与《崩溃边缘的女人》的演出，以及佩德罗·阿莫多瓦的导演方法。</p>
+<p class="when">11月12日 周四 19:30 · Alamo Drafthouse Cinema，共 2 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/12/women-on-the-verge-of-a-nervous-breakdown-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Gay Divorcee <span class="alt">柳暗花明</span></h4>
+<p class="facts">1934 · Mark Sandrich · 105 分钟 · 喜剧 / 爱情</p>
+
+<p class="about">舞蹈家盖与律师艾尔伯特前往巴黎，艾尔伯特却须赴斯科特继承父亲职位。盖邂逅想离婚的咪咪并借她雨衣，咪咪想请艾尔伯特帮忙。</p>
+<p class="when">11月12日 周四 19:30 · Stanford Theatre，共 6 场</p>
+<a class="go" href="https://stanfordtheatre.org/calendars/Happy%20Holidays%202026.html" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>SFTFF 2026 – DOCUMENTARY</h4>
+<p class="facts">2026</p>
+
+<p class="about">2026年旧金山跨性别电影节继续推出纪录片短片单元，展映四部真挚而具探索性的短片。</p>
+<p class="when">11月12日 周四 21:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/sftff-2026-documentary/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Angry Birds Movie <span class="alt">愤怒的小鸟</span></h4>
+<p class="facts">2016 · 克莱·凯蒂斯、弗格尔·赖利 · 97 分钟 · 动画 / 冒险 / 喜剧</p>
+
+<p class="about">孤僻易怒的胖红在情绪管理课程中结识飞镖黄和炸弹黑，神秘绿猪的到来让他心生戒备，而担忧很快得到验证。</p>
+<p class="when">11月13日 周五 12:00 · AMC Mercado 20，共 12 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-dc0b0e8e9f08fdef2f735710a20cbb6d473fa6ae37799f98130a759b690656c8" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Waikiki Brothers <span class="alt">와이키키 브라더스 · 威基基兄弟</span></h4>
+<p class="facts">2001 · 林顺礼 · 109 分钟 · 剧情 / 音乐</p>
+
+<p class="about">四人乐队成员因现实相继离队，唯独Sung-woo坚持乐手理想；影片借他与懂得变通的酒店打杂对比，呈现理想与现实的矛盾。</p>
+<p class="when">11月13日 周五 16:00 · BAMPFA</p>
+<a class="go" href="https://bampfa.org/event/waikiki-brothers" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Closure <span class="alt">Bez końca · 止水之询</span></h4>
+<p class="facts">2026 · Michał Marczak · 105 分钟 · 纪录</p>
+
+<p class="about">少年儿子失踪后，丹尼尔游走于维斯瓦河深处，在恐惧其已跳河与希望其生还之间备受煎熬。</p>
+<p class="when">11月13日 周五 18:00 · Roxie Theater，共 5 场</p>
+<a class="go" href="https://roxie.com/film/closure/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Friday the 13th <span class="alt">十三号星期五</span></h4>
+<p class="facts">1980 · 肖恩·S·坎宁汉 · 95 分钟 · 恐怖</p>
+
+<p class="about">水晶湖营地曾发生男孩溺亡与多起凶杀案，多年后重新开放，年轻辅导员无视警告，接连遭神秘杀手追杀。</p>
+<p class="when">11月13日 周五 19:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/floating-features-friday-the-13th/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>SFTFF 2026 – HORROR</h4>
+<p class="facts">2026</p>
+
+<p class="about">旧金山跨性别电影节恐怖短片单元汇集五部惊悚片，包括跨性别演员受困于儿童节目熊角色、女子被吸血鬼咬后发生异变等故事。</p>
+<p class="when">11月13日 周五 19:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/sftff-2026-horror/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>God with Us</h4>
+<p class="facts">2026 · Jimmy Jenkins · 剧情</p>
+
+<p class="about">马里兰州街区，玛丽·安妮·托马斯奇迹般怀孕，她与男友约瑟夫的生活天翻地覆；怀疑、危险与神圣命运交织，爱情面临考验。</p>
+<p class="when">11月13日 周五 19:00 · AMC Mercado 20，共 3 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-ecb44e4010b1cd096813c6897838b59f4ae6d6e6579fe79cd41e74af95b89145" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Traces of Justice <span class="alt">神探之痕迹</span></h4>
+<p class="facts">2026 · 陈思诚 · 140 分钟 · 犯罪</p>
+
+<p class="about">刑事技术警察崔寻走过半个多世纪，与同事屡破大案，秉承“为人民服务”初心，见证公安事业发展和新中国崛起。</p>
+<p class="when">11月13日 周五 19:00 · AMC Mercado 20，共 6 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-4f30e515a2b51d8fbf349bb80c7653563118b28451eb1b1cfa907a4597279275" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Inheritance <span class="alt">からみ合い · 遗产</span></h4>
+<p class="facts">1962 · 小林正树 · 108 分钟 · 剧情</p>
+
+<p class="about">机器公司老总得知只剩三个月生命，决定分发遗产，但儿子失踪；寻找过程中，复杂人际关系与奸情逐渐显露。</p>
+<p class="when">11月13日 周五 19:30 · BAMPFA</p>
+<a class="go" href="https://bampfa.org/event/inheritance" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>SFTFF 2026 – GRAB BAG</h4>
+<p class="facts">2026</p>
+
+<p class="about">旧金山跨性别电影节综合短片单元汇集九部类型与基调各异的短片，包括跨性别牛仔参与同性恋牛仔竞技的音乐视频等作品。</p>
+<p class="when">11月13日 周五 21:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/sftff-2026-grab-bag/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Voyage to the Mystery Moon <span class="alt">神秘的土卫六之旅</span></h4>
+<p class="facts">2006 · 纪录</p>
+
+<p class="about">经历7年太空遨游后，欧空局惠更斯号登陆器成功登上土卫六表面，并传回照片等数据，为人类了解土卫六提供珍贵科学依据。</p>
+<p class="when">11月13日 周五 22:00 · Alamo Drafthouse Valley Fair</p>
+<a class="go" href="https://drafthouse.com/sf/show/agfadrome-mystery-voyage-november-2026" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Festive Fun with Peppa Cinema Experience</h4>
+<p class="facts">2026</p>
+
+
+<p class="when">11月14日 周六 10:30 · AMC Mercado 20，共 4 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-559d7d0b992940c5da185993e3036500b73ebdf006db4cdfe8299dff1d112bb5" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>League of Legends Worlds 26 - Finals in Theater</h4>
+<p class="facts">2026</p>
+
+
+<p class="when">11月14日 周六 11:00 · AMC Mercado 20</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-55c14d77fe007e835c8014a761562214d015effcf2b7a781857ebfd95d136cbc" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Viva Carmen <span class="alt">Carmen, l'oiseau rebelle · 浓情卡门</span></h4>
+<p class="facts">2026 · Sébastien Laudenbach · 91 分钟 · 动画 / 音乐 / 剧情</p>
+
+<p class="about">1845年塞维利亚，少年萨尔瓦多遇见吉普赛女子卡门；为对抗命运，他集结一群街头孩子，设法保护她。</p>
+<p class="when">11月14日 周六 13:00 · AMC Mercado 20，共 3 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-75dc31c8a7e047fbf4e77a5e5b6e59c1372b44bc39fd3603ca05b707f40efaa9" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>West Indies: The Fugitive Slaves of Liberty <span class="alt">West Indies ou les Nègres marrons de la liberté · 西印度群岛</span></h4>
+<p class="facts">1979 · Med Hondo · 116 分钟 · 音乐 / 历史 / 剧情</p>
+
+<p class="about">在废弃雪铁龙工厂中的巨大奴隶船上，西印度群岛数百年受法国压迫的历史被搬上舞台，人们以歌舞讲述从奴役到大都市流离的故事。</p>
+<p class="when">11月14日 周六 14:00 · Yerba Buena Center for the Arts</p>
+<a class="go" href="https://dothebay.com/events/2026/11/14/west-indies-the-fugitive-slaves-of-liberty-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Dune <span class="alt">沙丘</span></h4>
+<p class="facts">2021 · 丹尼斯·维伦纽瓦 · 156 分钟 · 科幻 / 冒险</p>
+
+<p class="about">改编自弗兰克·赫伯特的《沙丘》。保罗·厄崔迪随家族前往沙漠星球厄拉科斯，卷入围绕“香料”的权力争斗，并逐渐发现自己的命运。</p>
+<p class="when">11月14日 周六 14:30 · AMC Dine-In Sunnyvale 12，共 13 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-3a15f8bb3419e0c0a37107124826d41a7ffe0bb99f4ad7f418ad48e417a7d6c1" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Little Forest <span class="alt">리틀 포레스트 · 小森林</span></h4>
+<p class="facts">2018 · 林顺礼 · 103 分钟 · 剧情</p>
+
+<p class="about">改编自五十岚大介的日本同名漫画，讲述女主人公放下城市生活，来到农村老家感受农村生活。</p>
+<p class="when">11月14日 周六 18:30 · BAMPFA</p>
+<a class="go" href="https://bampfa.org/event/little-forest" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>SFTFF 2026 – SPECULATIVE FICTION</h4>
+<p class="facts">2025</p>
+
+<p class="about">2026年旧金山跨性别电影节“推想小说”短片单元汇集六部影片，其中一部讲述跨性别美人鱼违抗母亲警告浮上水面。</p>
+<p class="when">11月14日 周六 19:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/sftff-2026-speculative-fiction/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Nirvanna the Band the Show the Movie on 35mm</h4>
+
+
+
+<p class="when">11月14日 周六 19:30 · Balboa Theater</p>
+<a class="go" href="https://dothebay.com/events/2026/11/14/nirvanna-the-band-the-show-the-movie-on-35mm-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>SFTFF 2026 – ADULT (18+)</h4>
+<p class="facts">2025</p>
+
+<p class="about">2026年旧金山跨性别电影节“成人（18+）”短片单元汇集五部成人短片，其中一部分享术后六年的经历与感受。</p>
+<p class="when">11月14日 周六 21:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/sftff-2026-adult-18/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Classic Shorts from the Dream Factory – Volume 2</h4>
+
+
+<p class="about">本三碟合集收录36部米高梅短片，以歌舞为主，含彩色两本剧、单本“小报歌舞”和米高梅综艺秀，由杂耍名家与未来影星出演。</p>
+<p class="when">11月15日 周日 12:15 · Alamo Drafthouse Valley Fair</p>
+<a class="go" href="https://drafthouse.com/sf/show/alamo-crafthouse-wallace-gromit-the-classic-shorts" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Blade Runner <span class="alt">银翼杀手</span></h4>
+<p class="facts">1982 · 雷德利·斯科特 · 117 分钟 · 科幻 / 剧情 / 惊悚</p>
+
+<p class="about">未来侦探瑞克·戴克奉命追捕叛逃复制人，同时被一位神秘女子吸引，她的秘密或侵蚀他的灵魂。</p>
+<p class="when">11月15日 周日 14:15 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/blade-runner-the-final-cut/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Hunting Flies + Roly Poly</h4>
+<p class="facts">1969</p>
+
+<p class="about">瓦伊达的两部讽刺喜剧同场放映，短片《Roly Poly》先于《Hunting Flies》。内容涉及靠移植事故死者器官存活的赛车手，以及遇见伊雷娜后生活转变、害怕妻子的男子。</p>
+<p class="when">11月15日 周日 15:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/hunting-flies-roly-poly/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Skin I Live In <span class="alt">La piel que habito · 吾栖之肤</span></h4>
+<p class="facts">2011 · 佩德罗·阿莫多瓦 · 120 分钟 · 剧情 / 恐怖 / 悬疑</p>
+
+<p class="about">整形医生罗伯特丧妻失女后，将研究推向未知领域；别墅密室里住着与世隔绝的薇拉，她既是病人又是实验对象，二人渊源纷繁错乱。</p>
+<p class="when">11月15日 周日 15:00 · Alamo Drafthouse Cinema，共 2 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/15/the-skin-i-live-in-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Just Like Weather <span class="alt">美國心 · 美国心</span></h4>
+<p class="facts">1986 · 方育平 · 93 分钟 · 剧情</p>
+
+<p class="about">Allen Fong 通过一对年轻夫妻的视角，展现婚姻中的压力与紧张。</p>
+<p class="when">11月15日 周日 18:00 · BAMPFA</p>
+<a class="go" href="https://bampfa.org/event/just-weather" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Back to the Future on 35mm</h4>
+
+
+
+<p class="when">11月15日 周日 19:00 · Balboa Theater</p>
+<a class="go" href="https://dothebay.com/events/2026/11/15/back-to-the-future-on-35mm-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Alice in Wonderland –Dive in Wonderland– <span class="alt">不思議の国でアリスと –Dive in Wonderland– · 与爱丽丝梦游仙境 -Dive in Wonderland-</span></h4>
+<p class="facts">2025 · 筱原俊哉 · 95 分钟 · 动画 / 冒险 / 奇幻</p>
+
+<p class="about">对未来迷惘的大学生安昙野理世收到已故奶奶的神秘邀请函，进入不可思议的国度，与爱丽丝一同踏上旅程，并面对迷惘与选择。</p>
+<p class="when">11月16日 周一 19:00 · AMC Mercado 20，共 4 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-29c6d470edcc5cb6336c27c1943af722e3c858eb142c8fe338fa896bc39bec48" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>AMC Screen Unseen: November 16</h4>
+<p class="facts">2026</p>
+
+
+<p class="when">11月16日 周一 19:00 · AMC Dine-In Sunnyvale 12，共 3 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-24f718914c0b88b0e47ce8bfc0f66ca349aa94a8937153a03b7cf9d1293546c6" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Counsellor at Law <span class="alt">律师</span></h4>
+<p class="facts">1933 · 威廉·惠勒 · 82 分钟 · 剧情</p>
+
+<p class="about">一位成功的律师努力应对妻子的不忠和自己隐藏的过去。</p>
+<p class="when">11月17日 周二 18:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/counsellor-at-law/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Hunger Games: Sunrise on the Reaping <span class="alt">饥饿游戏：收获日出</span></h4>
+<p class="facts">2026 · 弗朗西斯·劳伦斯 · 159 分钟 · 科幻 / 动作 / 冒险</p>
+
+<p class="about">改编自苏珊·柯林斯同名小说。故事设在《饥饿游戏》前24年，第50届饥饿游戏抽签日，年轻的黑密斯·阿伯纳西被选中参赛。</p>
+<p class="when">11月18日 周三 18:00 · AMC Dine-In Sunnyvale 12，共 344 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-38ba0f9ff773db245f5d270518f2179074615902977ee052585e7313501369b1" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Black Hole Collective Film Lab</h4>
+
+
+<p class="about">黑洞集体胶片实验室2014年始于奥克兰，致力于提供可负担的社区光化学实验室，并属于艺术家运营胶片实验室国际网络。</p>
+<p class="when">11月18日 周三 19:00 · BAMPFA</p>
+<a class="go" href="https://bampfa.org/event/black-hole-collective-film-lab" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>’80s NYC Underground: Free “Mondo New York” Film (Live Worms Gallery)</h4>
+
+
+
+<p class="when">11月18日 周三 19:00 · Live Worms Gallery</p>
+<a class="go" href="https://sf.funcheap.com/80s-nyc-underground-free-mondo-york-film-live-worms-gallery/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Married to the Mob <span class="alt">嫁入黑帮</span></h4>
+<p class="facts">1988 · 乔纳森·戴米 · 104 分钟 · 喜剧 / 犯罪</p>
+
+<p class="about">安吉拉厌倦黑帮丈夫的犯罪生活，丈夫因与老大情妇有染被杀后，她带儿子赴纽约重启；老大盯上她，FBI卧底也想借她抓捕老大。</p>
+<p class="when">11月18日 周三 19:30 · Alamo Drafthouse Cinema，共 2 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/18/married-to-the-mob-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Planes, Trains and Automobiles <span class="alt">落难见真情</span></h4>
+<p class="facts">1987 · 约翰·休斯 · 92 分钟 · 喜剧</p>
+
+<p class="about">广告商尼尔为感恩节回家乘飞机，途中遇上粗俗的德尔，暴风雪使航班改道，两人被迫结伴踏上归途，在接连意外中渐渐亲近。</p>
+<p class="when">11月18日 周三 19:30 · Balboa Theater</p>
+<a class="go" href="https://dothebay.com/events/2026/11/18/planes-trains-and-automobiles-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Electric Dreams <span class="alt">电脑梦幻曲</span></h4>
+<p class="facts">1984 · 史蒂文·巴伦 · 96 分钟 · 爱情 / 科幻 / 喜剧</p>
+
+<p class="about">麦尔斯买来一台电脑，啤酒意外渗入后它有了意识，自称埃德加。麦尔斯爱上邻居马德琳后，人与电脑从朋友变成情敌。</p>
+<p class="when">11月18日 周三 19:30 · 4 Star Theater，共 2 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/18/electric-dreams-tickets-0zmaayj" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>I Play Rocky <span class="alt">我演洛奇</span></h4>
+<p class="facts">2026 · 彼得·法雷利 · 128 分钟 · 剧情 / 历史</p>
+
+<p class="about">改编自史泰龙真实经历：一位无名演员坚信自己不仅要写《洛奇》剧本，更要亲自出演洛奇，面对阻挠押上一切争取主角。</p>
+<p class="when">11月19日 周四 14:00 · AMC Mercado 20，共 69 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-04a1c942c9be77aa21d0eae90443a0d72fd6f8c12d56d3d46b4275fda2df59dd" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Love Birds</h4>
+<p class="facts">2025 · Angel Morris、Elliott Kennerson · 28 分钟 · 纪录</p>
+
+<p class="about">1972年，一对生物学家在加州海峡群岛研究海鸥，发现大量雌性配对；其“女同性恋海鸥”研究引发争议，也危及二人婚姻。</p>
+<p class="when">11月19日 周四 16:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/love-birds/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Roberta <span class="alt">罗贝尔塔</span></h4>
+<p class="facts">1935 · 威廉·A·塞特 · 106 分钟 · 喜剧 / 音乐 / 爱情</p>
+
+<p class="about">足球运动员约翰随乐队赴巴黎，拜访经营高级时装店的姨妈，并遇见歌手沙尔文卡；后来他继承生意，与斯蒂芬妮合伙经营。</p>
+<p class="when">11月19日 周四 17:35 · Stanford Theatre，共 8 场</p>
+<a class="go" href="https://stanfordtheatre.org/calendars/Happy%20Holidays%202026.html" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Sundays <span class="alt">Los domingos · 礼拜天</span></h4>
+<p class="facts">2025 · Alauda Ruiz de Azúa · 115 分钟 · 剧情</p>
+
+<p class="about">17岁少女艾娜拉面临大学专业抉择，却透露自己与上帝联系日深、准备成为隐修女，令全家措手不及并引发分裂与考验。</p>
+<p class="when">11月19日 周四 18:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/los-domingos/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Giant - The Play</h4>
+<p class="facts">2026 · Nicholas Hytner · 136 分钟 · 剧情</p>
+
+<p class="about">1983年夏，《女巫》出版前，罗尔德·达尔因公开谴责以色列、为巴勒斯坦人辩护，与英美出版商紧张会面。伦敦西区现场录制。</p>
+<p class="when">11月19日 周四 18:00 · AMC Mercado 20，共 2 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-a8c69dd6a234253b73c12d9194bb48d35bae689dfb099462cfb8bb2ae89fd43e" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>La Chinoise <span class="alt">中国姑娘</span></h4>
+<p class="facts">1967 · 让-吕克·戈达尔 · 96 分钟 · 剧情 / 喜剧</p>
+
+<p class="about">六十年代巴黎，银行家女儿维洛尼卡在借来的公寓成立马列主义共产党支部，成员有演员、女佣、画家和大学生，被打伤的亨利到来。</p>
+<p class="when">11月19日 周四 19:00 · BAMPFA</p>
+<a class="go" href="https://bampfa.org/event/la-chinoise" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>On the Road <span class="alt">En el camino · 末路同途</span></h4>
+<p class="facts">2026 · David Pablos · 93 分钟 · 剧情 / 惊悚 / 犯罪</p>
+
+<p class="about">叛逆青年维内诺说服冷硬的卡车司机穆涅科带他穿越墨西哥北部；同行中两人渐生亲密，维内诺的黑暗过往却再度浮现，令他们陷入危险。</p>
+<p class="when">11月20日 周五 18:00 · Roxie Theater，共 2 场</p>
+<a class="go" href="https://roxie.com/film/on-the-road-en-el-camino/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>BTS WORLD TOUR 'ARIRANG' IN KAOHSIUNG</h4>
+
+
+
+<p class="when">11月21日 周六 13:00 · AMC Dine-In Sunnyvale 12，共 6 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-a8b33af8207ed7ce205d678f1b0822eff707cfd5bfc93467cda6ca32b5b6a673" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>SCREENING + TALK | HUZ: Drawn to Life with Animator Ron Husband and Disney Legend Don Hahn</h4>
+
+
+
+<p class="when">11月21日 周六 13:00 · The Walt Disney Family Museum</p>
+<a class="go" href="https://dothebay.com/events/2026/11/21/screening-talk-huz-drawn-to-life-with-animator-ron-husband-and-disney-legend-don-hahn-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>True Stories <span class="alt">一些真实故事</span></h4>
+<p class="facts">1986 · 大卫·伯恩 · 89 分钟 · 喜剧 / 音乐</p>
+
+<p class="about">影片跟随大卫·布莱恩驾车游历得克萨斯州，借鲜明的小人物及其故事展现当地人对生活与爱情的独特理解，并把歌舞与写实结合。</p>
+<p class="when">11月21日 周六 16:15 · Alamo Drafthouse Cinema，共 2 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/21/true-stories-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>The Host <span class="alt">괴물 · 汉江怪物</span></h4>
+<p class="facts">2006 · 奉俊昊 · 120 分钟 · 恐怖 / 剧情 / 科幻</p>
+
+<p class="about">汉江边经营小店的康斗与家人过着平静生活，直到江边出现不明怪物，女儿玄舒被抓走，全家和城市陷入危机。</p>
+<p class="when">11月21日 周六 19:30 · AMC Mercado 20，共 2 场</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-dc4acc0a27ccbdf56847a60f75467096dfef681076dc321ec66ad566c5cc6b99" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>IT on VHS</h4>
+
+
+
+<p class="when">11月21日 周六 19:30 · 4 Star Theater</p>
+<a class="go" href="https://dothebay.com/events/2026/11/21/it-on-vhs-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Basement presents: IT on VHS (with Director Q&amp;A)</h4>
+
+
+
+<p class="when">11月21日 周六 19:30 · Cinema SF</p>
+<a class="go" href="https://dothebay.com/events/2026/11/21/basement-presents-it-on-vhs-with-director-q-a-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>40 Years of Fuckin' Up</h4>
+<p class="facts">2026 · James Buddy Day · 120 分钟 · 纪录</p>
+
+<p class="about">这部纪录片讲述标志性朋克乐队NOFX疯狂背后的真相。</p>
+<p class="when">11月21日 周六 21:30 · Alamo Drafthouse Valley Fair</p>
+<a class="go" href="https://drafthouse.com/sf/show/nofx-40-years-of-fuckin-up" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>A Deeper Love: The Story of Miss Peppermint</h4>
+<p class="facts">2025 · Oriel Pe'er · 86 分钟 · 纪录 / 剧情 / 喜剧</p>
+
+<p class="about">纪录片聚焦变装明星Peppermint，讲述她关于名声、身份与变装艺术的旅程，以及从卑微出身到跨性别群体先锋的经历。</p>
+<p class="when">11月22日 周日 13:00 · Roxie Theater</p>
+<a class="go" href="https://roxie.com/film/new-people-a-deeper-love-the-story-of-miss-peppermint/" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Tokyo Drifter <span class="alt">トーキョードリフター</span></h4>
+<p class="facts">2011 · 松江哲明 · 72 分钟 · 剧情</p>
+
+<p class="about">影片是一封写给东京的情书：音乐人Kenta Maeno在五月雨夜抱着吉他游走于城市暗处，歌唱生活、爱情与东京。</p>
+<p class="when">11月22日 周日 15:30 · Balboa Theater</p>
+<a class="go" href="https://dothebay.com/events/2026/11/22/tokyo-drifter-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>JEONGHAN X JOSHUA JOURNEY INTO [DREAMING] - INCHEON</h4>
+<p class="facts">180 分钟</p>
+
+<p class="about">该演出于2026年10月30日至31日及11月1日在Inspire Arena举行，并通过线上线下直播呈现。</p>
+<p class="when">11月22日 周日 16:00 · Cinemark Century Great Mall 20</p>
+<a class="go" href="https://tickets.fandango.com/Transaction/Ticketing/ticketboxoffice.aspx?a=13122&amp;showtimehashcode=v2-c459114080ec9b59eea84e88d163c98d4e79db1c43298a6d66eca29097197fd2" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Pearl <span class="alt">珀尔</span></h4>
+<p class="facts">2022 · 蒂·韦斯特 · 103 分钟 · 恐怖 / 剧情</p>
+
+<p class="about">《X》前传：年轻珀尔为获自由嫁给霍华德，丈夫参军后失联；她在农场照料瘫痪父亲，并渴望成为明星离开农场。</p>
+<p class="when">11月22日 周日 19:30 · Alamo Drafthouse Cinema，共 2 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/22/pearl-tickets" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article><article class="item">
+<h4>Dark Passage</h4>
+<p class="facts">1952 · Victor M. Gover · 26 分钟 · 惊悚 / 犯罪</p>
+
+<p class="about">一名前侦探协助苏格兰场侦破一桩涉及谋杀与勒索的案件。</p>
+<p class="when">11月22日 周日 19:30 · 4 Star Theater，共 2 场</p>
+<a class="go" href="https://dothebay.com/events/2026/11/22/dark-passage-tickets-rmzvvmd" target="_blank" rel="noopener">购票 / 详情 ↗</a>
+</article></div>
+</details>
+</section>
+
+<footer>场次和简介来自各影院、场馆和活动网站的公开页面，以官网为准。</footer>
+</div>
+</body>
+</html>
